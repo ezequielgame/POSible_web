@@ -2,7 +2,7 @@
 
     class Connection{
         
-        protected static function connectionData(){
+        public function connectionData(){
             $dir = dirname(__FILE__);
             $configFile = "config";
             $configs = json_decode(file_get_contents($dir."/".$configFile),true);
@@ -10,8 +10,8 @@
             return $connectionConfig;
         }
 
-        public static function connect(){
-            $dataList = self::connectionData();
+        public function connect(){
+            $dataList = $this->connectionData();
             try{
                 $connection = new PDO(
                     "mysql:host=".$dataList["server"].";dbname=".$dataList["database"],
