@@ -1,0 +1,987 @@
+[18-Apr-2022 00:12:52 Europe/Berlin] PHP Warning:  Undefined property: Reponse::$reponse in C:\xampp\htdocs\progdist\posible\classes\response-class.php on line 42
+[18-Apr-2022 00:12:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\classes\response-class.php on line 42
+[18-Apr-2022 00:12:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\classes\response-class.php on line 42
+[18-Apr-2022 00:13:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Reponse" not found in C:\xampp\htdocs\progdist\posible\routes\routes.php:5
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include()
+#1 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 5
+[18-Apr-2022 01:41:18 Europe/Berlin] PHP Warning:  Undefined property: Connection::$connectionData in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 35
+[18-Apr-2022 01:41:18 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 36
+[18-Apr-2022 01:41:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:41:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:41:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:41:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 46
+[18-Apr-2022 01:41:29 Europe/Berlin] PHP Warning:  Undefined property: Connection::$connectionData in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 35
+[18-Apr-2022 01:41:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 36
+[18-Apr-2022 01:41:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:41:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:41:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:41:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 46
+[18-Apr-2022 01:41:44 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:41:44 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:41:44 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:41:44 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 46
+[18-Apr-2022 01:43:26 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:43:26 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:43:26 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:43:26 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 46
+[18-Apr-2022 01:44:50 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:44:50 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:44:50 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:44:50 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:44:50 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: print_r() expects at most 2 arguments, 3 given in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:45
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(45): print_r('mysql:host=;dbn...', NULL, NULL)
+#1 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:45:11 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:45:11 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:45:11 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:45:11 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:45:11 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 47
+[18-Apr-2022 01:45:11 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 47
+[18-Apr-2022 01:45:11 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 48
+[18-Apr-2022 01:45:11 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 49
+[18-Apr-2022 01:45:56 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:45:56 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:45:56 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:45:56 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 46
+[18-Apr-2022 01:45:56 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 48
+[18-Apr-2022 01:45:56 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 48
+[18-Apr-2022 01:45:56 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 49
+[18-Apr-2022 01:45:56 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 50
+[18-Apr-2022 01:46:20 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:46:20 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:46:20 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:46:20 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 46
+[18-Apr-2022 01:46:20 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 48
+[18-Apr-2022 01:46:20 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 48
+[18-Apr-2022 01:46:20 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 49
+[18-Apr-2022 01:46:20 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 50
+[18-Apr-2022 01:46:21 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:46:21 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:46:21 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:46:21 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 46
+[18-Apr-2022 01:46:21 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 48
+[18-Apr-2022 01:46:21 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 48
+[18-Apr-2022 01:46:21 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 49
+[18-Apr-2022 01:46:21 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 50
+[18-Apr-2022 01:46:44 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:46:44 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:46:44 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:46:44 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 46
+[18-Apr-2022 01:46:44 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 48
+[18-Apr-2022 01:46:44 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 48
+[18-Apr-2022 01:46:44 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 49
+[18-Apr-2022 01:46:44 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 50
+[18-Apr-2022 01:47:04 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:47:04 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:47:04 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 46
+[18-Apr-2022 01:47:04 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 47
+[18-Apr-2022 01:47:04 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 49
+[18-Apr-2022 01:47:04 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 49
+[18-Apr-2022 01:47:04 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 50
+[18-Apr-2022 01:47:04 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 51
+[18-Apr-2022 01:47:32 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:47:32 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 45
+[18-Apr-2022 01:47:32 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 46
+[18-Apr-2022 01:47:32 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 47
+[18-Apr-2022 01:47:32 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 49
+[18-Apr-2022 01:47:32 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 49
+[18-Apr-2022 01:47:32 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 50
+[18-Apr-2022 01:47:32 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 51
+[18-Apr-2022 01:48:16 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:48:16 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:48:16 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 39
+[18-Apr-2022 01:48:16 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 40
+[18-Apr-2022 01:48:16 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:48:16 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:48:16 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:48:16 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:50:19 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:50:19 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:50:19 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 39
+[18-Apr-2022 01:50:19 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 40
+[18-Apr-2022 01:50:19 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:50:19 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:50:19 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:50:19 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 39
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 40
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 39
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 40
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:50:20 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:51:04 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:51:04 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:51:04 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 39
+[18-Apr-2022 01:51:04 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 40
+[18-Apr-2022 01:51:04 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:51:04 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:51:04 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:51:04 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:51:39 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:56
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(30): Connection->connectionData()
+#1 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 56
+[18-Apr-2022 01:52:01 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:52:01 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:52:01 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 39
+[18-Apr-2022 01:52:01 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 40
+[18-Apr-2022 01:52:01 Europe/Berlin] PHP Warning:  Undefined array key "server" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:52:01 Europe/Berlin] PHP Warning:  Undefined array key "database" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:52:01 Europe/Berlin] PHP Warning:  Undefined array key "user" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:52:01 Europe/Berlin] PHP Warning:  Undefined array key "password" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:52:18 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:56
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(30): Connection->connectionData()
+#1 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 56
+[18-Apr-2022 01:52:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:56
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(30): Connection->connectionData()
+#1 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 56
+[18-Apr-2022 01:52:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:56
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(30): Connection->connectionData()
+#1 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 56
+[18-Apr-2022 01:52:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:56
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(30): Connection->connectionData()
+#1 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 56
+[18-Apr-2022 01:53:12 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:56
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(30): Connection->connectionData()
+#1 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 56
+[18-Apr-2022 01:53:13 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:56
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(30): Connection->connectionData()
+#1 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 56
+[18-Apr-2022 01:54:28 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:56
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(30): Connection->connectionData()
+#1 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 56
+[18-Apr-2022 01:56:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:56
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(30): Connection->connectionData()
+#1 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 56
+[18-Apr-2022 01:56:52 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 31
+[18-Apr-2022 01:56:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:56:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 38
+[18-Apr-2022 01:56:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 39
+[18-Apr-2022 01:56:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 40
+[18-Apr-2022 01:56:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:56:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 42
+[18-Apr-2022 01:56:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 43
+[18-Apr-2022 01:56:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 44
+[18-Apr-2022 01:57:26 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:32
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\index.php(29): Connection->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 32
+[18-Apr-2022 02:03:23 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in C:\xampp\htdocs\progdist\posible\models\connection\connection.php:54
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\connection\connection.php(54): PDO->query('select * from u...')
+#1 C:\xampp\htdocs\progdist\posible\index.php(31): Connection->getData('select * from u...')
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 54
+[18-Apr-2022 02:10:26 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 3
+[18-Apr-2022 02:40:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetController" not found in C:\xampp\htdocs\progdist\posible\routes\services\get.php:6
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include()
+#1 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 6
+[18-Apr-2022 02:41:49 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in C:\xampp\htdocs\progdist\posible\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(10): GetModel::getData('users')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(6): GetController::getData('users')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 13
+[18-Apr-2022 02:43:37 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in C:\xampp\htdocs\progdist\posible\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(10): GetModel::getData('users')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(6): GetController::getData('users')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 13
+[18-Apr-2022 02:45:00 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in C:\xampp\htdocs\progdist\posible\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(10): GetModel::getData('users')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(6): GetController::getData('users')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 13
+[18-Apr-2022 03:04:24 Europe/Berlin] PHP Warning:  require_once(classes/response-class.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 3
+[18-Apr-2022 03:04:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'classes/response-class.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\progdist\posible\routes\routes.php:3
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include()
+#1 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 3
+[18-Apr-2022 03:05:15 Europe/Berlin] PHP Warning:  require_once(classes/response-class.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 6
+[18-Apr-2022 03:05:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'classes/response-class.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:6
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(5): require_once()
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 6
+[18-Apr-2022 03:05:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:13
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 13
+[18-Apr-2022 03:06:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:08:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:10:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController::getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:11:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:11:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:11:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:13:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:13:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:13:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(10): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:14:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(10): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:14:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(10): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:15:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:15:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:15:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:16:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:16:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:16:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:16:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:18:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:18:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:19:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:19:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:19:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:19:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:19:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:19:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:19:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:19:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:20:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:20:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:20:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:20:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:20:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:20:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:20:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:22:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:12
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 12
+[18-Apr-2022 03:23:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:23:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:23:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:23:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:23:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:24:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:24:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:24:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:24:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:16
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[18-Apr-2022 03:25:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:25:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:25:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:25:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:25:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:25:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:25:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:25:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:27:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:27:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:27:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:27:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:28:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:28:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:28:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:28:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:29:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:29:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:29:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:29:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:29:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:29:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:17
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(9): GetController->getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 17
+[18-Apr-2022 03:32:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:13
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(8): GetController::getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 13
+[18-Apr-2022 03:32:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:13
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(8): GetController::getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 13
+[18-Apr-2022 03:33:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:13
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(8): GetController::getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 13
+[18-Apr-2022 03:34:04 Europe/Berlin] PHP Warning:  require_once(classes/response.class.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 3
+[18-Apr-2022 03:34:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'classes/response.class.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\progdist\posible\routes\routes.php:3
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include()
+#1 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 3
+[18-Apr-2022 03:34:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:13
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(8): GetController::getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 13
+[18-Apr-2022 03:34:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:13
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(8): GetController::getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 13
+[18-Apr-2022 03:34:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetModel" not found in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:13
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(8): GetController::getData('users')
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(21): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 13
+[18-Apr-2022 03:35:33 Europe/Berlin] PHP Warning:  require_once(classes/response-class.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 3
+[18-Apr-2022 03:35:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'classes/response-class.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\progdist\posible\routes\routes.php:3
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include()
+#1 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#2 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 3
+[18-Apr-2022 03:41:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Access to undeclared static property Response::$response in C:\xampp\htdocs\progdist\posible\classes\response.class.php:37
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\routes.php(10): Response::error404()
+#1 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\classes\response.class.php on line 37
+[18-Apr-2022 03:42:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Access to undeclared static property Response::$response in C:\xampp\htdocs\progdist\posible\classes\response.class.php:37
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\routes.php(10): Response::error404()
+#1 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\classes\response.class.php on line 37
