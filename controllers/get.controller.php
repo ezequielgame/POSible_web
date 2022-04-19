@@ -10,9 +10,9 @@
     class GetController{
 
         //Just Select
-        static public function getData($table, $select){
+        static public function getData($table, $select,$orderBy,$orderMode,$page,$pageSize){
 
-            $response = GetModel::getData($table,$select);
+            $response = GetModel::getData($table,$select,$orderBy,$orderMode,$page,$pageSize);
 
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
@@ -20,9 +20,9 @@
         }
 
         //Where clause
-        static public function getDataWhere($table, $select,$linkTo,$equalTo){
+        static public function getDataWhere($table, $select,$linkTo,$equalTo,$orderBy,$orderMode,$page,$pageSize){
 
-            $response = GetModel::getDataWhere($table,$select,$linkTo,$equalTo);
+            $response = GetModel::getDataWhere($table,$select,$linkTo,$equalTo,$orderBy,$orderMode,$page,$pageSize);
 
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);

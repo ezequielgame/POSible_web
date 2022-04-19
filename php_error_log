@@ -150,3 +150,133 @@ Stack trace:
 #5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
 #6 {main}
   thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 35
+[19-Apr-2022 03:28:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'posible.controller' doesn't exist in C:\xampp\htdocs\progdist\posible\models\get.model.php:19
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(19): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(15): GetModel::getData('controller', '*')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(21): GetController::getData('controller', '*')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 19
+[19-Apr-2022 03:29:13 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'posible.controllers' doesn't exist in C:\xampp\htdocs\progdist\posible\models\get.model.php:19
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(19): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(15): GetModel::getData('controllers', '*')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(21): GetController::getData('controllers', '*')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 19
+[19-Apr-2022 03:29:22 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'posible.controllers' doesn't exist in C:\xampp\htdocs\progdist\posible\models\get.model.php:19
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(19): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(15): GetModel::getData('controllers', '*')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(21): GetController::getData('controllers', '*')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 19
+[19-Apr-2022 03:31:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'posible.controllers' doesn't exist in C:\xampp\htdocs\progdist\posible\models\get.model.php:19
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(19): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(15): GetModel::getData('controllers', '*')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(21): GetController::getData('controllers', '*')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 19
+[19-Apr-2022 03:32:17 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'posible.controllers' doesn't exist in C:\xampp\htdocs\progdist\posible\models\get.model.php:19
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(19): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(15): GetModel::getData('controllers', '*')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(21): GetController::getData('controllers', '*')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 19
+[19-Apr-2022 04:36:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\progdist\posible\models\get.model.php:51
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(51): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(25): GetModel::getDataWhere('users', '*', 'id_user, email_...', '1_prueba1@gmail...')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(19): GetController::getDataWhere('users', '*', 'id_user, email_...', '1_prueba1@gmail...')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 51
+[19-Apr-2022 04:37:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'business_name' in 'field list' in C:\xampp\htdocs\progdist\posible\models\get.model.php:51
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(51): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(25): GetModel::getDataWhere('users', 'business_name', 'id_user,email_u...', '1_prueba1@gmail...')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(19): GetController::getDataWhere('users', 'business_name', 'id_user,email_u...', '1_prueba1@gmail...')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 51
+[19-Apr-2022 04:41:49 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'field list' in C:\xampp\htdocs\progdist\posible\models\get.model.php:19
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(19): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(15): GetModel::getData('users', 'id_user,email')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(21): GetController::getData('users', 'id_user,email')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 19
+[19-Apr-2022 04:54:40 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by id_user asc' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:25
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(25): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(15): GetModel::getData('', '*', 'id_user', 'asc')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(24): GetController::getData('', '*', 'id_user', 'asc')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 25
+[19-Apr-2022 04:55:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by id_user asc' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:26
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(26): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(15): GetModel::getData('', '*', 'id_user', 'asc')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(24): GetController::getData('', '*', 'id_user', 'asc')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 26
+[19-Apr-2022 04:58:44 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'busines_name' in 'field list' in C:\xampp\htdocs\progdist\posible\models\get.model.php:59
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(59): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(25): GetModel::getDataWhere('users', 'busines_name', 'id_user', '1', 'email_user', 'asc')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(22): GetController::getDataWhere('users', 'busines_name', 'id_user', '1', 'email_user', 'asc')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 59
+[19-Apr-2022 04:58:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'busines_name_user' in 'field list' in C:\xampp\htdocs\progdist\posible\models\get.model.php:59
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(59): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(25): GetModel::getDataWhere('users', 'busines_name_us...', 'id_user', '1', 'email_user', 'asc')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(22): GetController::getDataWhere('users', 'busines_name_us...', 'id_user', '1', 'email_user', 'asc')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 59
+[19-Apr-2022 05:17:28 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 5' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:30
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(30): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(15): GetModel::getData('users', '*', NULL, 'asc', '1', '5')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(27): GetController::getData('users', '*', NULL, 'asc', '1', '5')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 30

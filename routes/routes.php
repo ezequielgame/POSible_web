@@ -8,6 +8,7 @@
     // No request
     if(empty($routesArray)){
         $response = Response::error404();
+        echo($response);
     }else if(count($routesArray) == 1){ // Request
         $method = $_SERVER["REQUEST_METHOD"];
         switch($method){
@@ -16,6 +17,7 @@
                 break;
             case "POST":
                 $response = Response::statusResponse();
+                echo($response);
                 // $response = Response::error200("Solicitud POST");
                 break;
             case "PUT":
