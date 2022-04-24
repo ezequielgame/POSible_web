@@ -62,6 +62,45 @@
             echo($jsonResponse);
         }
 
+        // Search %like%
+        static public function getDataLike($table, $select,$linkTo,$search,$orderBy,$orderMode,$page,$pageSize){
+
+            $response = GetModel::getDataLike($table,$select,$linkTo,$search,$orderBy,$orderMode,$page,$pageSize);
+
+            $controllerResponse = new GetController();
+            $controllerResponse->responser($response);
+
+        }
+
+        //Search %like% relation tables
+        static public function getRelationDataLike($table, $select,$linkTo,$search,$rel,$relType,$orderBy,$orderMode,$page,$pageSize){
+
+            $response = GetModel::getRelationDataLike($table, $select,$linkTo,$search,$rel,$relType,$orderBy,$orderMode,$page,$pageSize);
+
+            $controllerResponse = new GetController();
+            $controllerResponse->responser($response);
+
+        }
+
+        //Range between
+        static public function getDataRange($table,$select,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn){
+
+            $response = GetModel::getDataRange($table,$select,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn);
+
+            $controllerResponse = new GetController();
+            $controllerResponse->responser($response);
+
+        }
+
+        static public function getRelDataRange($table,$select,$rel,$relType,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn){
+
+            $response = GetModel::getRelDataRange($table,$select,$rel,$relType,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn);
+
+            $controllerResponse = new GetController();
+            $controllerResponse->responser($response);
+
+        }
+
     }
 
 ?>

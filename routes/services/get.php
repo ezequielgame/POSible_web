@@ -16,6 +16,9 @@
 
     $page = $_GET["page"] ?? null;
     $pageSize = $_GET["pageSize"] ?? null;
+
+    $filterTo = $_GET["filterTo"] ?? null;
+    $filterIn = $_GET["filterIn"] ?? null;
      
     $response = new GetController();
     // Where Clause
@@ -28,6 +31,28 @@
             $response->getRelationDataWhere($table, $select,$linkTo,$equalTo,$rel,$relType,$orderBy,$orderMode,$page,$pageSize); //Table relation with where
         } else{
             $response->getDataWhere($table,$select,$linkTo,$equalTo,$orderBy,$orderMode,$page,$pageSize);
+        }
+    }else if (isset($_GET["linkTo"]) && isset($_GET["search"]) ){ // Search %like%
+        $search = $_GET["search"];
+        $linkTo = $_GET["linkTo"];
+        if(isset($_GET["rel"]) && isset($_GET["relType"])){
+            $rel = $_GET["rel"];
+            $relType = $_GET["relType"];
+            $response->getRelationDataLike($table, $select,$linkTo,$search,$rel,$relType,$orderBy,$orderMode,$page,$pageSize); 
+        }else{
+            $response->getDataLike($table,$select,$linkTo,$search,$orderBy,$orderMode,$page,$pageSize);
+        }
+        
+    } else if (isset($_GET["linkTo"]) && isset($_GET["between1"]) && isset($_GET["between2"])){ // Search %like%
+        $linkTo = $_GET["linkTo"];
+        $between1 = $_GET["between1"];
+        $between2 = $_GET["between2"];
+        if(isset($_GET["rel"]) && isset($_GET["relType"])){
+            $rel = $_GET["rel"];
+            $relType = $_GET["relType"];
+            $response->getRelDataRange($table,$select,$rel,$relType,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn);
+        }else{
+            $response->getDataRange($table,$select,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn);
         }
     } else if(isset($_GET["rel"]) && isset($_GET["relType"])){ // Tables relations whitout where
         $rel = $_GET["rel"];

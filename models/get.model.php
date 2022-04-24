@@ -55,6 +55,8 @@
                                         ." = ".$value.".id_".$relTypeArray[$key]." ";
                     }
                 }
+            }else{
+                return null;
             }
 
             if($orderBy != null && $orderMode != null){
@@ -199,6 +201,278 @@
             foreach ($linkToArray as $key => $value) {
                 $stmt->bindParam(":".$value, $equalToArray[$key], PDO::PARAM_STR);
             }
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        }
+
+        static public function getDataLike($table,$select,$linkTo,$search,$orderBy,$orderMode,$page,$pageSize){
+
+
+            $query = "select $select from $table";
+
+            $linkToArray = explode(",",$linkTo);
+            $searchToArray = explode("_",$search);
+
+            $linkToText = "";
+
+            if(count($linkToArray)>1){
+                foreach ($linkToArray as $key => $value) {
+                    if($key > 0){
+                        $linkToText .= "and ".$value." = :".$value." ";
+                    }
+                }
+            }
+
+            $query .= " where $linkToArray[0] like '%$searchToArray[0]%' $linkToText";
+
+            if($orderBy != null && $orderMode != null){
+                $query .= " order by $orderBy $orderMode";
+            }
+
+            if($page != null && $pageSize != null){
+                $lowLimit = ($pageSize * $page - 1) - ($pageSize - 1);
+                $query .= " limit $lowLimit, $pageSize";
+            }
+            
+            $_connection = new Connection();
+            $stmt = $_connection->connect()->prepare($query);
+            
+            echo($query);
+
+            foreach ($linkToArray as $key => $value) {
+                if($key > 0){
+                    $stmt->bindParam(":".$value, $searchToArray[$key], PDO::PARAM_STR);
+                }
+                
+            }
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        }
+
+        static public function getRelationDataLike($table, $select,$linkTo,$search,$rel,$relType,$orderBy,$orderMode,$page,$pageSize){ 
+            
+            //Wheres
+            $query = "select $select from $table";
+
+            $linkToArray = explode(",",$linkTo);
+            $searchToArray = explode("_",$search);
+
+            $linkToText = "";
+
+            if(count($linkToArray)>1){
+                foreach ($linkToArray as $key => $value) {
+                    if($key > 0){
+                        $linkToText .= "and ".$value." = :".$value." ";
+                    }
+                }
+            }
+
+            //Relations
+            $relArray = explode(",",$rel); //Related tables names in plural categories, branches, etc...
+            $relTypeArray = explode(",",$relType); //Related tables suffixes category, branch, etc...
+
+
+            if(count($relArray) > 1){
+                $innersText = "";
+                //$relArray[0] = Main table categories, items, etc...
+                //$relTypeArray[0] = Main table suffix category, item, etc...
+                foreach ($relArray as $key => $value) {
+                    // $key = index   =>   $value = related table name
+                    // for each related table
+                    // inner join RelatedTableName
+                    // on MainTable.id_RelatedTableSuffix_MainTableSuffix
+                    // = RelatedTableName.id_RelatedTableSuffix
+                    if($key > 0){
+                        $innersText .= " inner join ".$value
+                                        ." on ".$relArray[0].".id_".$relTypeArray[$key]."_".$relTypeArray[0]
+                                        ." = ".$value.".id_".$relTypeArray[$key]." ";
+                    }
+                }
+            }else{
+                return null;
+            }
+
+            if($orderBy != null && $orderMode != null){
+                if(isset($innersText)){
+                    $query .= " $innersText where $linkToArray[0] like '%$searchToArray[0]%' $linkToText  order by $orderBy $orderMode";
+                } else {
+                    $query .= " where where $linkToArray[0] like '%$searchToArray[0]%' $linkToText order by $orderBy $orderMode";
+                }
+                
+            }else{
+                if(isset($innersText)){
+                    $query .= " $innersText where $linkToArray[0] like '%$searchToArray[0]%' $linkToText ";
+                } else{
+                    $query .= " where $linkToArray[0] like '%$searchToArray[0]%' $linkToText";
+                }
+                
+            }
+
+            if($page != null && $pageSize != null){
+                $lowLimit = ($pageSize * $page - 1) - ($pageSize - 1);
+                $query .= " limit $lowLimit, $pageSize";
+            }
+
+            $_connection = new Connection();
+
+            $stmt = $_connection->connect()->prepare($query);
+
+
+            foreach ($linkToArray as $key => $value) {
+                if($key > 0){
+                    $stmt->bindParam(":".$value, $searchToArray[$key], PDO::PARAM_STR);
+                }
+                
+            }
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+
+        }
+
+        // Between
+        static public function getDataRange($table,$select,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn){
+
+            // $linkToArray = explode(",",$linkTo);
+            // $equalToArray = explode("_",$equalTo);
+
+            // $linkToText = "";
+
+            // if(count($linkToArray)>1){
+            //     foreach ($linkToArray as $key => $value) {
+            //         if($key > 0){
+            //             $linkToText .= "and ".$value." = :".$value." ";
+            //         }
+            //     }
+            // }
+
+            $query = "select $select from $table where $linkTo between '$between1' and '$between2'";
+
+            if($filterIn != null && $filterTo != null){
+                $filterInArray = explode(",",$filterIn);
+                if(count($filterInArray) > 1){
+                    $filterInText = "";
+                    foreach ($filterInArray as $key => $value) {
+                        $filterInText .= "'".$value;
+                        if($key != count($filterInArray)-1){
+                            $filterInText .= "',";
+                        }else{
+                            $filterInText .= "'";
+                        }
+                    }
+                    $query .= " and ".$filterTo." in (".$filterInText.")";
+                }else{
+                    $query .= " and ".$filterTo." in ('".$filterIn."')";
+                }
+            }
+
+            if($orderBy != null && $orderMode != null){
+                $query .= " order by $orderBy $orderMode";
+            }
+
+            if($page != null && $pageSize != null){
+                $lowLimit = ($pageSize * $page - 1) - ($pageSize - 1);
+                $query .= " limit $lowLimit, $pageSize";
+            }
+
+            $_connection = new Connection();
+            $stmt = $_connection->connect()->prepare($query);
+            
+            // foreach ($linkToArray as $key => $value) {
+            //     $stmt->bindParam(":".$value, $equalToArray[$key], PDO::PARAM_STR);
+            // }
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        }
+
+        // Between and related tables
+        static public function getRelDataRange($table,$select,$rel,$relType,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn){
+
+            // $linkToArray = explode(",",$linkTo);
+            // $equalToArray = explode("_",$equalTo);
+
+            // $linkToText = "";
+
+            // if(count($linkToArray)>1){
+            //     foreach ($linkToArray as $key => $value) {
+            //         if($key > 0){
+            //             $linkToText .= "and ".$value." = :".$value." ";
+            //         }
+            //     }
+            // }
+
+            $query = "select $select from $table";
+
+            $relArray = explode(",",$rel); //Related tables names in plural categories, branches, etc...
+            $relTypeArray = explode(",",$relType); //Related tables suffixes category, branch, etc...
+
+
+            if(count($relArray) > 1){
+                $innersText = "";
+                //$relArray[0] = Main table categories, items, etc...
+                //$relTypeArray[0] = Main table suffix category, item, etc...
+                foreach ($relArray as $key => $value) {
+                    // $key = index   =>   $value = related table name
+                    // for each related table
+                    // inner join RelatedTableName
+                    // on MainTable.id_RelatedTableSuffix_MainTableSuffix
+                    // = RelatedTableName.id_RelatedTableSuffix
+                    if($key > 0){
+                        $innersText .= " inner join ".$value
+                                        ." on ".$relArray[0].".id_".$relTypeArray[$key]."_".$relTypeArray[0]
+                                        ." = ".$value.".id_".$relTypeArray[$key]." ";
+                    }
+                }
+            }else{
+                return null;
+            }
+            
+            if(isset($innersText)){
+                $query .= " $innersText";
+            }
+
+            $query .= "where $linkTo between '$between1' and '$between2'";
+            if($filterIn != null && $filterTo != null){
+                $filterInArray = explode(",",$filterIn);
+                if(count($filterInArray) > 1){
+                    $filterInText = "";
+                    foreach ($filterInArray as $key => $value) {
+                        $filterInText .= "'".$value;
+                        if($key != count($filterInArray)-1){
+                            $filterInText .= "',";
+                        }else{
+                            $filterInText .= "'";
+                        }
+                    }
+                    $query .= " and ".$filterTo." in (".$filterInText.")";
+                }else{
+                    $query .= " and ".$filterTo." in ('".$filterIn."')";
+                }
+            }
+
+            if($orderBy != null && $orderMode != null){
+                $query .= " order by $orderBy $orderMode";
+            }
+
+            if($page != null && $pageSize != null){
+                $lowLimit = ($pageSize * $page - 1) - ($pageSize - 1);
+                $query .= " limit $lowLimit, $pageSize";
+            }
+
+            $_connection = new Connection();
+            $stmt = $_connection->connect()->prepare($query);
+            
+            // foreach ($linkToArray as $key => $value) {
+            //     $stmt->bindParam(":".$value, $equalToArray[$key], PDO::PARAM_STR);
+            // }
 
             $stmt->execute();
 

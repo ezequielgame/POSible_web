@@ -369,3 +369,105 @@ Stack trace:
 #5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
 #6 {main}
   thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 160
+[24-Apr-2022 03:08:17 Europe/Berlin] PHP Warning:  Undefined variable $linkTo in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 38
+[24-Apr-2022 03:08:17 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\progdist\posible\models\get.model.php:203
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(203): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(44): GetModel::getDataWhere('users', 'business_name_u...', NULL, 'prueba1@gmail.c...', NULL, 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(38): GetController::getDataWhere('users', 'business_name_u...', NULL, 'prueba1@gmail.c...', NULL, 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 203
+[24-Apr-2022 03:23:09 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\progdist\posible\models\get.model.php:247
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(247): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(68): GetModel::getDataLike('users', 'business_name_u...', 'email_user,id_u...', 'prueba1_1', NULL, 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(39): GetController::getDataLike('users', 'business_name_u...', 'email_user,id_u...', 'prueba1_1', NULL, 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 247
+[24-Apr-2022 03:23:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\progdist\posible\models\get.model.php:249
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(249): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(68): GetModel::getDataLike('users', 'business_name_u...', 'email_user,id_u...', 'prueba1_1', NULL, 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(39): GetController::getDataLike('users', 'business_name_u...', 'email_user,id_u...', 'prueba1_1', NULL, 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 249
+[24-Apr-2022 06:52:30 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 359
+[24-Apr-2022 06:55:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1'2'')' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:386
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(386): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(88): GetModel::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(50): GetController::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 386
+[24-Apr-2022 06:55:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1''2'')' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:386
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(386): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(88): GetModel::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(50): GetController::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 386
+[24-Apr-2022 06:57:15 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '2')' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:389
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(389): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(88): GetModel::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(50): GetController::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 389
+[24-Apr-2022 06:57:26 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '')' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:389
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(389): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(88): GetModel::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(50): GetController::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 389
+[24-Apr-2022 06:58:01 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '',2)' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:389
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(389): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(88): GetModel::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(50): GetController::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 389
+[24-Apr-2022 06:58:18 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2)' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:389
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(389): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(88): GetModel::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(50): GetController::getDataRange('users', 'id_user,email_u...', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 389
+[24-Apr-2022 07:19:04 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'currency_name' in 'field list' in C:\xampp\htdocs\progdist\posible\models\get.model.php:485
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(485): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(97): GetModel::getRelDataRange('users', 'id_user,email_u...', 'users,currencie...', 'user,currency', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2,3,4,5,6')
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(53): GetController::getRelDataRange('users', 'id_user,email_u...', 'users,currencie...', 'user,currency', 'date_created_us...', '2022-04-14', '2022-04-22', NULL, 'asc', NULL, NULL, 'id_user', '1,2,3,4,5,6')
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 485
