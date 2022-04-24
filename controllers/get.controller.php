@@ -19,6 +19,25 @@
 
         }
 
+        //Related table
+        static public function getRelationData($table, $select,$rel,$relType,$orderBy,$orderMode,$page,$pageSize){
+
+            $response = GetModel::getRelationData($table, $select,$rel,$relType,$orderBy,$orderMode,$page,$pageSize);
+
+            $controllerResponse = new GetController();
+            $controllerResponse->responser($response);
+
+        }
+
+        static public function getRelationDataWhere($table, $select,$linkTo,$equalTo,$rel,$relType,$orderBy,$orderMode,$page,$pageSize){
+
+            $response = GetModel::getRelationDataWhere($table, $select,$linkTo,$equalTo,$rel,$relType,$orderBy,$orderMode,$page,$pageSize);
+
+            $controllerResponse = new GetController();
+            $controllerResponse->responser($response);
+
+        }
+
         //Where clause
         static public function getDataWhere($table, $select,$linkTo,$equalTo,$orderBy,$orderMode,$page,$pageSize){
 

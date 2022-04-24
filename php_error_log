@@ -280,3 +280,92 @@ Stack trace:
 #5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
 #6 {main}
   thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 30
+[19-Apr-2022 06:16:42 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'currencies.id_currency_currency' in 'on clause' in C:\xampp\htdocs\progdist\posible\models\get.model.php:87
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(87): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(24): GetModel::getRelationData('users', '*', 'currencies', 'currency', NULL, 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(29): GetController::getRelationData('users', '*', 'currencies', 'currency', NULL, 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 87
+[19-Apr-2022 06:19:34 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'business_name' in 'field list' in C:\xampp\htdocs\progdist\posible\models\get.model.php:85
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(85): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(24): GetModel::getRelationData('users', 'name_currency,b...', 'users,currencie...', 'user,currency', NULL, 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(29): GetController::getRelationData('users', 'name_currency,b...', 'users,currencie...', 'user,currency', NULL, 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 85
+[24-Apr-2022 01:24:54 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 27
+[24-Apr-2022 01:37:14 Europe/Berlin] PHP Warning:  Undefined variable $rel in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 26
+[24-Apr-2022 01:37:14 Europe/Berlin] PHP Warning:  Undefined variable $relType in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 26
+[24-Apr-2022 01:37:14 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from users order by id_user asc' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:160
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(160): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(34): GetModel::getRelationDataWhere('users', 'name_currency,b...', 'name_currency', 'Euros', NULL, NULL, 'id_user', 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(26): GetController::getRelationDataWhere('users', 'name_currency,b...', 'name_currency', 'Euros', NULL, NULL, 'id_user', 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 160
+[24-Apr-2022 01:38:26 Europe/Berlin] PHP Warning:  Undefined variable $rel in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 26
+[24-Apr-2022 01:38:26 Europe/Berlin] PHP Warning:  Undefined variable $relType in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 26
+[24-Apr-2022 01:38:26 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from users order by id_user asc' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:160
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(160): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(34): GetModel::getRelationDataWhere('users', 'name_currency,b...', 'name_currency', 'Euros', NULL, NULL, 'id_user', 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(26): GetController::getRelationDataWhere('users', 'name_currency,b...', 'name_currency', 'Euros', NULL, NULL, 'id_user', 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 160
+[24-Apr-2022 02:28:55 Europe/Berlin] PHP Warning:  Undefined variable $rel in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 26
+[24-Apr-2022 02:28:55 Europe/Berlin] PHP Warning:  Undefined variable $relType in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 26
+[24-Apr-2022 02:28:55 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from users order by id_user asc' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:160
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(160): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(34): GetModel::getRelationDataWhere('users', 'name_currency,b...', 'name_currency', 'Euros', NULL, NULL, 'id_user', 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(26): GetController::getRelationDataWhere('users', 'name_currency,b...', 'name_currency', 'Euros', NULL, NULL, 'id_user', 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 160
+[24-Apr-2022 02:30:13 Europe/Berlin] PHP Warning:  Undefined variable $rel in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 27
+[24-Apr-2022 02:30:13 Europe/Berlin] PHP Warning:  Undefined variable $relType in C:\xampp\htdocs\progdist\posible\routes\services\get.php on line 27
+[24-Apr-2022 02:30:13 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from users order by id_user asc' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:160
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(160): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(34): GetModel::getRelationDataWhere('users', 'name_currency,b...', 'name_currency', 'Euros', NULL, NULL, 'id_user', 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(27): GetController::getRelationDataWhere('users', 'name_currency,b...', 'name_currency', 'Euros', NULL, NULL, 'id_user', 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 160
+[24-Apr-2022 02:30:40 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from users  inner join currencies on users.id_currency_user = currencies.id_c...' at line 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php:160
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(160): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(34): GetModel::getRelationDataWhere('users', 'name_currency,b...', 'name_currency', 'Euros', 'users,currencie...', 'user,currency', 'id_user', 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(28): GetController::getRelationDataWhere('users', 'name_currency,b...', 'name_currency', 'Euros', 'users,currencie...', 'user,currency', 'id_user', 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 160
+[24-Apr-2022 02:39:25 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name_currency' in 'field list' in C:\xampp\htdocs\progdist\posible\models\get.model.php:160
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\models\get.model.php(160): PDOStatement->execute()
+#1 C:\xampp\htdocs\progdist\posible\controllers\get.controller.php(34): GetModel::getRelationDataWhere('users', 'name_currency,b...', 'name_currency,b...', 'Euros_tiendita', 'users', 'user', 'id_user', 'asc', NULL, NULL)
+#2 C:\xampp\htdocs\progdist\posible\routes\services\get.php(28): GetController::getRelationDataWhere('users', 'name_currency,b...', 'name_currency,b...', 'Euros_tiendita', 'users', 'user', 'id_user', 'asc', NULL, NULL)
+#3 C:\xampp\htdocs\progdist\posible\routes\routes.php(16): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 160
