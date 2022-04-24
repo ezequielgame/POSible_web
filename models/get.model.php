@@ -7,9 +7,15 @@
 
     class GetModel{
 
+
         // Just Select
         static public function getData($table, $select,$orderBy,$orderMode,$page,$pageSize){
 
+            //Validate table exists
+            if(empty(Connection::getColumns($table)) || !Connection::validColumns($table,$select)){
+                return null;
+            }
+            
             if($orderBy != null && $orderMode != null){
                 $query = "select $select from $table order by $orderBy $orderMode";
             }else{
@@ -21,11 +27,17 @@
                 $query .= " limit $lowLimit, $pageSize";
             }
 
+
             $_connection = new Connection();
 
             $stmt = $_connection->connect()->prepare($query);
 
-            $stmt->execute();
+            try{
+                $stmt->execute();
+            }catch(PDOException $e){
+                return  Response::statusResponse();
+            }
+            
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
 
@@ -44,6 +56,10 @@
                 //$relArray[0] = Main table categories, items, etc...
                 //$relTypeArray[0] = Main table suffix category, item, etc...
                 foreach ($relArray as $key => $value) {
+                    //Validate table exists
+                    if(empty(Connection::getColumns($value))){
+                        return null;
+                    }
                     // $key = index   =>   $value = related table name
                     // for each related table
                     // inner join RelatedTableName
@@ -84,7 +100,12 @@
 
             $stmt = $_connection->connect()->prepare($query);
 
-            $stmt->execute();
+            try{
+                $stmt->execute();
+            }catch(PDOException $e){
+                return null;
+            }
+            
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
 
@@ -117,6 +138,10 @@
                 //$relArray[0] = Main table categories, items, etc...
                 //$relTypeArray[0] = Main table suffix category, item, etc...
                 foreach ($relArray as $key => $value) {
+                    //Validate table exists
+                    if(empty(Connection::getColumns($value))){
+                        return null;
+                    }
                     // $key = index   =>   $value = related table name
                     // for each related table
                     // inner join RelatedTableName
@@ -161,7 +186,11 @@
                 $stmt->bindParam(":".$value, $equalToArray[$key], PDO::PARAM_STR);
             }
 
-            $stmt->execute();
+            try{
+                $stmt->execute();
+            }catch(PDOException $e){
+                return null;
+            }
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
 
@@ -170,6 +199,11 @@
 
         // Where Clause
         static public function getDataWhere($table, $select,$linkTo,$equalTo,$orderBy,$orderMode,$page,$pageSize){
+
+            //Validate table exists
+            if(empty(Connection::getColumns($table)) || !Connection::validColumns($table,$select.",".$linkTo)){
+                return null;
+            }
 
             $linkToArray = explode(",",$linkTo);
             $equalToArray = explode("_",$equalTo);
@@ -193,8 +227,7 @@
                 $lowLimit = ($pageSize * $page - 1) - ($pageSize - 1);
                 $query .= " limit $lowLimit, $pageSize";
             }
-            
-    
+
             $_connection = new Connection();
             $stmt = $_connection->connect()->prepare($query);
             
@@ -202,13 +235,20 @@
                 $stmt->bindParam(":".$value, $equalToArray[$key], PDO::PARAM_STR);
             }
 
-            $stmt->execute();
+            try{
+                $stmt->execute();
+            }catch(PDOException $e){
+                return null;
+            }
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
         }
 
         static public function getDataLike($table,$select,$linkTo,$search,$orderBy,$orderMode,$page,$pageSize){
 
+            if(empty(Connection::getColumns($table)) || !Connection::validColumns($table,$select)){
+                return null;
+            }
 
             $query = "select $select from $table";
 
@@ -238,8 +278,6 @@
             
             $_connection = new Connection();
             $stmt = $_connection->connect()->prepare($query);
-            
-            echo($query);
 
             foreach ($linkToArray as $key => $value) {
                 if($key > 0){
@@ -248,7 +286,11 @@
                 
             }
 
-            $stmt->execute();
+            try{
+                $stmt->execute();
+            }catch(PDOException $e){
+                return null;
+            }
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
         }
@@ -281,6 +323,10 @@
                 //$relArray[0] = Main table categories, items, etc...
                 //$relTypeArray[0] = Main table suffix category, item, etc...
                 foreach ($relArray as $key => $value) {
+                    //Validate table exists
+                    if(empty(Connection::getColumns($value))){
+                        return null;
+                    }
                     // $key = index   =>   $value = related table name
                     // for each related table
                     // inner join RelatedTableName
@@ -329,7 +375,11 @@
                 
             }
 
-            $stmt->execute();
+            try{
+                $stmt->execute();
+            }catch(PDOException $e){
+                return null;
+            }
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
 
@@ -351,6 +401,10 @@
             //         }
             //     }
             // }
+
+            if(empty(Connection::getColumns($table)) || !Connection::validColumns($table,$select)){
+                return null;
+            }
 
             $query = "select $select from $table where $linkTo between '$between1' and '$between2'";
 
@@ -388,7 +442,11 @@
             //     $stmt->bindParam(":".$value, $equalToArray[$key], PDO::PARAM_STR);
             // }
 
-            $stmt->execute();
+            try{
+                $stmt->execute();
+            }catch(PDOException $e){
+                return null;
+            }
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
         }
@@ -420,6 +478,10 @@
                 //$relArray[0] = Main table categories, items, etc...
                 //$relTypeArray[0] = Main table suffix category, item, etc...
                 foreach ($relArray as $key => $value) {
+                    //Validate table exists
+                    if(empty(Connection::getColumns($value))){
+                        return null;
+                    }
                     // $key = index   =>   $value = related table name
                     // for each related table
                     // inner join RelatedTableName
@@ -439,7 +501,7 @@
                 $query .= " $innersText";
             }
 
-            $query .= "where $linkTo between '$between1' and '$between2'";
+            $query .= " where $linkTo between '$between1' and '$between2'";
             if($filterIn != null && $filterTo != null){
                 $filterInArray = explode(",",$filterIn);
                 if(count($filterInArray) > 1){
@@ -474,7 +536,11 @@
             //     $stmt->bindParam(":".$value, $equalToArray[$key], PDO::PARAM_STR);
             // }
 
-            $stmt->execute();
+            try{
+                $stmt->execute();
+            }catch(PDOException $e){
+                return null;
+            }
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
         }

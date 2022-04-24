@@ -5,10 +5,7 @@
 
     //Requirements
     require_once("controllers/get.controller.php");
-
-    // Get routes in URI (routesArray)
-    $uri = explode("?",$routesArray[1]); // /table?params
-    $table = $uri[0];
+    
     $select = $_GET["select"] ?? "*"; // Default *
 
     $orderBy = $_GET["orderBy"] ?? null;

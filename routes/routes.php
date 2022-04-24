@@ -5,6 +5,9 @@
     $routesArray = explode("/",$_SERVER["REQUEST_URI"]); // Indexing separate by /
     $routesArray = array_filter($routesArray); // Clean null indexes 
     
+    $uri = explode("?",$routesArray[1]); // /table?params
+    $table = $uri[0];
+
     // No request
     if(empty($routesArray)){
         $response = Response::error404();
@@ -16,9 +19,7 @@
                 include "services/get.php";
                 break;
             case "POST":
-                $response = Response::statusResponse();
-                echo($response);
-                // $response = Response::error200("Solicitud POST");
+                include "services/post.php";
                 break;
             case "PUT":
                 $response = Response::error400();
