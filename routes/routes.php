@@ -26,7 +26,7 @@
                 // $response = Response::error200("Solicitud PUT");
                 break;
             case "DELETE":
-                $response = Response::error400();
+                include "services/delete.php";
                 // $response = Response::error200("Solicitud DELETE");
                 break;
         }
