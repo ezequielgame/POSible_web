@@ -22,7 +22,7 @@
                 include "services/post.php";
                 break;
             case "PUT":
-                $response = Response::error400();
+                include "services/put.php";
                 // $response = Response::error200("Solicitud PUT");
                 break;
             case "DELETE":
