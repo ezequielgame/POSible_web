@@ -764,3 +764,119 @@ Stack trace:
 #3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
 #4 {main}
   thrown in C:\xampp\htdocs\progdist\posible\controllers\put.controller.php on line 9
+[25-Apr-2022 07:47:15 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:47:15 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:47:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:48:07 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:48:07 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:48:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:48:07 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 84
+[25-Apr-2022 07:48:17 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:48:17 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:48:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:52:55 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:52:55 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:52:55 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:09 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:09 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:09 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:10 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:10 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:11 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:11 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:54 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:54 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:55:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:56:14 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:56:14 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:56:14 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:56:15 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:56:15 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:56:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:57:06 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:57:06 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:57:06 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:58:15 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:58:15 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:58:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:58:17 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:58:17 Europe/Berlin] PHP Warning:  Undefined variable $Array in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 07:58:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 39
+[25-Apr-2022 08:03:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$token_exp_user in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 86
+[25-Apr-2022 08:11:10 Europe/Berlin] PHP Parse error:  syntax error, unexpected double-quoted string "data", expecting ")" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 73
+[25-Apr-2022 08:24:32 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:24:32 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:17 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:17 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:32 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:32 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:34 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:34 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:35 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:35 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:35 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:35 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:35 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:35 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:36 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:36 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:36 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:36 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:37 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:37 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:54 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:25:54 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:31:06 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:31:06 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:32:37 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:32:37 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:32:38 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:32:38 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:32:39 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:32:39 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:32:39 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:32:39 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:32:40 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[25-Apr-2022 08:32:40 Europe/Berlin] PHP Warning:  Attempt to read property "token_exp_user" on null in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 94
+[26-Apr-2022 02:54:39 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 8
+[26-Apr-2022 03:08:01 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 12
+[26-Apr-2022 03:08:41 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 12
+[26-Apr-2022 03:09:11 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 12
+[26-Apr-2022 03:10:27 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 13
+[26-Apr-2022 05:40:34 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 13
+[26-Apr-2022 05:41:25 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 13
+[26-Apr-2022 05:47:19 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 13
+[26-Apr-2022 05:47:23 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 13
+[26-Apr-2022 05:48:03 Europe/Berlin] PHP Warning:  Undefined variable $uri in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 16
+[26-Apr-2022 05:48:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 16
+[26-Apr-2022 05:48:26 Europe/Berlin] PHP Warning:  Undefined variable $uri in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 16
+[26-Apr-2022 05:48:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 16
+[27-Apr-2022 05:27:06 Europe/Berlin] PHP Warning:  Undefined array key "Authentication" in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 6
+[27-Apr-2022 05:27:31 Europe/Berlin] PHP Warning:  Undefined array key "Authorization" in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 6
+[27-Apr-2022 05:27:52 Europe/Berlin] PHP Warning:  Undefined array key "Authorization" in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 6
+[27-Apr-2022 05:29:27 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "if" in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 8
+[27-Apr-2022 05:31:10 Europe/Berlin] PHP Warning:  Undefined array key "Authorization" in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 6
+[27-Apr-2022 05:32:03 Europe/Berlin] PHP Warning:  Undefined array key "authorization" in C:\xampp\htdocs\progdist\posible\routes\routes.php on line 6
+[27-Apr-2022 05:42:59 Europe/Berlin] PHP Warning:  Undefined array key "token" in C:\xampp\htdocs\progdist\posible\routes\services\put.php on line 34
+[28-Apr-2022 05:59:21 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "if", expecting "," or ";" in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 54
+[28-Apr-2022 05:59:30 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\models\connection\connection.php on line 53
+[28-Apr-2022 06:09:05 Europe/Berlin] PHP Warning:  Undefined array key "password_employee" in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 22
+[28-Apr-2022 06:09:23 Europe/Berlin] PHP Warning:  Undefined array key "password_employee" in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 22
+[28-Apr-2022 17:53:57 Europe/Berlin] PHP Warning:  Undefined variable $response in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 15
+[28-Apr-2022 17:53:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function postAuthToken() on null in C:\xampp\htdocs\progdist\posible\routes\services\post.php:15
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\routes.php(41): include()
+#1 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 15
+[28-Apr-2022 18:25:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ")" in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 109
+[29-Apr-2022 01:13:32 Europe/Berlin] PHP Warning:  Undefined array key "email_user" in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 44
+[29-Apr-2022 01:13:59 Europe/Berlin] PHP Warning:  Undefined array key "email_user" in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 44
+[13-May-2022 01:20:05 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 34

@@ -5,6 +5,26 @@
 
     //Requirements
     require_once("controllers/get.controller.php");
+
+    $headers = getallheaders();
+
+    if(isset($headers["authorization"])){
+        $token = $headers["authorization"];
+
+        //Validate token
+        $domain = $_GET["domain"] ?? "users";
+        $suffix = $_GET["suffix"] ?? "user";
+
+        $validate = Connection::validToken($token, $domain, $suffix);
+
+        if(!$validate){
+            echo Response::error401();
+            return;
+        }
+    } else {
+        echo Response::error401();
+        return;
+    }
     
     $select = $_GET["select"] ?? "*"; // Default *
 

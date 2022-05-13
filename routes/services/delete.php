@@ -20,9 +20,31 @@ if(isset($_GET["id"]) && isset($_GET["nameId"])){
 
     if(Connection::validColumns($table, $columns)){
 
-        //Controller response
-        $response = new DeleteController();
-        $response->deleteData($table, $_GET["id"],$_GET["nameId"]);
+        $headers = getallheaders();
+            
+
+        if(isset($headers["authorization"])){
+            $token = $headers["authorization"];
+            //Validate token
+            $domain = $_GET["domain"] ?? "users";
+            $suffix = $_GET["suffix"] ?? "user";
+
+            $validate = Connection::validToken($token, $domain, $suffix);
+
+            if($validate){
+
+                //Controller response
+                $response = new DeleteController();
+                $response->deleteData($table, $_GET["id"],$_GET["nameId"]);
+                
+            }else {
+                echo Response::error401();
+            }
+
+        }else{
+            echo Response::error401();
+        }
+        
 
     }else{
         echo Response::statusResponse(array(

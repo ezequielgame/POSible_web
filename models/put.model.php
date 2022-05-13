@@ -33,6 +33,7 @@
 
             $stmt = $conn->prepare($query);
 
+
             foreach ($data as $key => $value) {
                 $stmt->bindParam(":".$key,$data[$key],PDO::PARAM_STR);
             }

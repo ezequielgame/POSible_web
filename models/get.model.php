@@ -7,6 +7,7 @@
 
     class GetModel{
 
+        private const COMODIN = ",";
 
         // Just Select
         static public function getData($table, $select,$orderBy,$orderMode,$page,$pageSize){
@@ -116,7 +117,7 @@
             
             //Wheres
             $linkToArray = explode(",",$linkTo);
-            $equalToArray = explode("_",$equalTo);
+            $equalToArray = explode(self::COMODIN,$equalTo);
 
             $linkToText = "";
 
@@ -206,7 +207,7 @@
             }
 
             $linkToArray = explode(",",$linkTo);
-            $equalToArray = explode("_",$equalTo);
+            $equalToArray = explode(self::COMODIN,$equalTo);
 
             $linkToText = "";
 
@@ -253,7 +254,7 @@
             $query = "select $select from $table";
 
             $linkToArray = explode(",",$linkTo);
-            $searchToArray = explode("_",$search);
+            $searchToArray = explode(self::COMODIN,$search);
 
             $linkToText = "";
 
@@ -301,7 +302,7 @@
             $query = "select $select from $table";
 
             $linkToArray = explode(",",$linkTo);
-            $searchToArray = explode("_",$search);
+            $searchToArray = explode(self::COMODIN,$search);
 
             $linkToText = "";
 
@@ -390,7 +391,7 @@
         static public function getDataRange($table,$select,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn){
 
             // $linkToArray = explode(",",$linkTo);
-            // $equalToArray = explode("_",$equalTo);
+            // $equalToArray = explode(self::COMODIN,$equalTo);
 
             // $linkToText = "";
 
@@ -455,7 +456,7 @@
         static public function getRelDataRange($table,$select,$rel,$relType,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn){
 
             // $linkToArray = explode(",",$linkTo);
-            // $equalToArray = explode("_",$equalTo);
+            // $equalToArray = explode(self::COMODIN,$equalTo);
 
             // $linkToText = "";
 

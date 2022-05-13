@@ -8,10 +8,6 @@
 
         static public function postData($table, $data){
 
-
-            // echo($table);
-            // print_r($data);
-
             $columns = "";
             $values = "";
             foreach ($data as $key => $value) {
@@ -24,6 +20,8 @@
             $values = substr($values,0,-1);
             
             $query = "insert into $table ($columns) values ($values)";
+
+            // echo($query);
 
             $conn = Connection::connect();
 
@@ -45,21 +43,6 @@
                     "msg"=>$e
                 );
             }
-
-            // if($stmt->execute()){
-            //     return array(
-            //         "msg"=>"Inserted"
-            //     );
-            // }else{
-            //     echo Response::statusResponse(array(
-            //         "status" => 400,
-            //         "total" => 0,
-            //         "result" => [
-            //             "msg" => Connection::connect()->errorInfo()
-            //         ]
-            //         )
-            //     );
-            // }
 
         }
 

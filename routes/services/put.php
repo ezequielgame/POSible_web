@@ -13,8 +13,12 @@
 
         $columns = "";
 
+        $exceptions = array("suffix","domain");
+
         foreach ($data as $key => $value) {
-            $columns .= $key.",";
+            if(!in_array($key,$exceptions)){
+                $columns .= $key.",";
+            }
         }
 
         $columns .= $_GET["nameId"];
@@ -23,9 +27,32 @@
 
         if(Connection::validColumns($table, $columns)){
 
-            //Controller response
-            $response = new PutController();
-            $response->putData($table,$data, $_GET["id"],$_GET["nameId"]);
+            $headers = getallheaders();
+            
+
+            if(isset($headers["authorization"])){
+                $token = $headers["authorization"];
+                //Validate token
+                $domain = $_GET["domain"] ?? "users";
+                $suffix = $_GET["suffix"] ?? "user";
+
+                $validate = Connection::validToken($token, $domain, $suffix);
+
+                if($validate){
+
+                    //Controller response
+                    $response = new PutController();
+                    $response->putData($table,$data, $_GET["id"],$_GET["nameId"]);
+                    
+                }else {
+                    echo Response::error401();
+                }
+
+            }else{
+                echo Response::error401();
+            }
+
+            
 
         }else{
             echo Response::statusResponse(array(

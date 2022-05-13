@@ -1,7 +1,17 @@
 <?php
 
+    require_once("models/get.model.php");
+
+    
+    
+
     class Connection{
-        
+        const SECOND = 1;
+        const MINUTE = self::SECOND*60;
+        const HOUR  = self::MINUTE*60;
+        const DAY = self::HOUR*24;
+
+
         public static function connectionData(){
             $dir = dirname(__FILE__);
             $configFile = "config";
@@ -53,6 +63,44 @@
             }
             return $sum == count($selectArray);
         }
+
+
+        //Generate auth token
+        static public function jwt($id, $email){
+
+            $time = time();
+
+            $token = array(
+                "iat" => $time,//Start
+                "exp" => $time + self::DAY, // Expiration time
+                "data" => [
+                    "id" => $id,
+                    "email" => $email
+                ]
+            );
+
+            return $token;
+            
+        }
+
+        //Validate auth token
+        static public function validToken($token, $domain, $suffix){
+
+            $token = str_replace("Bearer ","",$token);
+
+            // Get token user
+            $user = GetModel::getDataWhere($domain, "token_exp_".$suffix, "token_".$suffix, $token,null,null,null,null);
+ 
+            $time = time();
+            if(!empty($user)){
+                $expiration = $user[0]->{"token_exp_".$suffix};
+            }
+            
+            return !empty($user) and $expiration > $time;
+
+
+        }
+
     }
 
 ?>
