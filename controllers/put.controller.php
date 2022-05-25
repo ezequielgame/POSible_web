@@ -9,7 +9,18 @@
         static public function putData($table, $data, $id, $nameId){
 
             $response = PutModel::putData($table, $data, $id, $nameId);
-            self::responser($response);
+            
+            if(is_string($response)){
+                echo $response;
+                return;
+            }
+
+            if(isset($response) && $response != null){
+                self::responser($response);
+            } else { //Controller already response
+                return;
+            }
+            
         }
 
         // Controller responses

@@ -9,10 +9,41 @@
 
     class GetController{
 
+        private const BASE_URL = "http://192.168.100.2/";
+
+        static public function completeImagesPath($table, $response){
+
+            foreach ($response as $key => $value) {
+                if($table == "users"){
+                    if(isset($response[$key]->img_path_user) && $response[$key]->img_path_user!=""){
+                        $response[$key]->img_path_user = self::BASE_URL.$response[$key]->img_path_user;
+                    }
+                } else if($table == "employees"){
+                    if(isset($response[$key]->img_path_employee) && $response[$key]->img_path_employee!=""){
+                        $response[$key]->img_path_employee = self::BASE_URL.$response[$key]->img_path_employee;
+                    }
+                }
+                else if($table == "items"){
+                    if(isset($response[$key]->img_path_item) && $response[$key]->img_path_item!=""){
+                        $response[$key]->img_path_item = self::BASE_URL.$response[$key]->img_path_item;
+                    }
+                }else if($table == "branches"){
+                    if(isset($response[$key]->img_path_branch) && $response[$key]->img_path_branch!=""){
+                        $response[$key]->img_path_branch = self::BASE_URL.$response[$key]->img_path_branch;
+                    }
+                }
+                
+            }
+            return $response;
+
+        }
+
         //Just Select
         static public function getData($table, $select,$orderBy,$orderMode,$page,$pageSize){
 
             $response = GetModel::getData($table,$select,$orderBy,$orderMode,$page,$pageSize);
+
+            $response = GetController::completeImagesPath($table,$response);
 
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
@@ -24,6 +55,7 @@
 
             $response = GetModel::getRelationData($table, $select,$rel,$relType,$orderBy,$orderMode,$page,$pageSize);
 
+            $response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
@@ -32,6 +64,8 @@
         static public function getRelationDataWhere($table, $select,$linkTo,$equalTo,$rel,$relType,$orderBy,$orderMode,$page,$pageSize){
 
             $response = GetModel::getRelationDataWhere($table, $select,$linkTo,$equalTo,$rel,$relType,$orderBy,$orderMode,$page,$pageSize);
+
+            $response = GetController::completeImagesPath($table,$response);
 
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
@@ -43,6 +77,7 @@
 
             $response = GetModel::getDataWhere($table,$select,$linkTo,$equalTo,$orderBy,$orderMode,$page,$pageSize);
 
+            $response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
@@ -67,6 +102,7 @@
 
             $response = GetModel::getDataLike($table,$select,$linkTo,$search,$orderBy,$orderMode,$page,$pageSize);
 
+            $response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
@@ -77,6 +113,7 @@
 
             $response = GetModel::getRelationDataLike($table, $select,$linkTo,$search,$rel,$relType,$orderBy,$orderMode,$page,$pageSize);
 
+            $response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
@@ -87,6 +124,7 @@
 
             $response = GetModel::getDataRange($table,$select,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn);
 
+            $response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
@@ -96,6 +134,7 @@
 
             $response = GetModel::getRelDataRange($table,$select,$rel,$relType,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn);
 
+            $response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 

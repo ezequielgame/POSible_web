@@ -2,6 +2,7 @@
 
     require_once("models/connection/connection.php");
     require_once("controllers/post.controller.php");
+    require_once("controllers/put.controller.php");
 
     if(isset($_POST)){
 
@@ -24,6 +25,56 @@
             }
             return;
         }
+
+        if(isset($_GET['action']) && !in_array($_GET['action'],["login","register"])){
+
+            if(isset($_GET["nameId"]) && isset($_GET["id"])){
+                $nameId = $_GET["nameId"];
+                $id = $_GET["id"];
+            }else{
+                echo Response::error400();
+            }
+
+            if($_GET['action'] == "upload"){
+
+                if(isset($_FILES['image']['name'])){
+                    $target_dir = "uploads/";
+    
+                    $target_file = $target_dir."profile_".$nameId."_".$id.".".pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+    
+
+                    $suffix = "";
+                    if($table == "users"){
+                        $suffix = "user";
+                    } else if($table == "employees"){
+                        $suffix = "employee";
+                    } else if($table == "items"){
+                        $suffix = "item";
+                    } else if($table == "branches"){
+                        $suffix = "branch";
+                    } 
+    
+                    if(move_uploaded_file($_FILES['image']['tmp_name'],$target_file)){
+                        $data = array();
+                        $data["img_path_".$suffix] = $target_file;
+                        
+                        PutController::putData($table, $data, $id, $nameId);    
+                    } else {
+                        echo Response::error400();
+                    }
+                    return;
+    
+                }
+                else{
+                    echo Response::error400();
+                    return;
+                }
+
+            }
+        
+        }
+
+
 
         $postColumns = "";
         $actions = array(

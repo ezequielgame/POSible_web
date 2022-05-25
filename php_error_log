@@ -880,3 +880,118 @@ Stack trace:
 [29-Apr-2022 01:13:32 Europe/Berlin] PHP Warning:  Undefined array key "email_user" in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 44
 [29-Apr-2022 01:13:59 Europe/Berlin] PHP Warning:  Undefined array key "email_user" in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 44
 [13-May-2022 01:20:05 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 34
+[19-May-2022 08:43:59 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "return" in C:\xampp\htdocs\progdist\posible\models\put.model.php on line 54
+[19-May-2022 08:47:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\xampp\htdocs\progdist\posible\controllers\put.controller.php:22
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\controllers\put.controller.php(12): PutController::responser('{\n    "status":...')
+#1 C:\xampp\htdocs\progdist\posible\routes\services\put.php(45): PutController::putData('users', Array, '4', 'id_user')
+#2 C:\xampp\htdocs\progdist\posible\routes\routes.php(44): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#5 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\put.controller.php on line 22
+[19-May-2022 08:52:06 Europe/Berlin] PHP Warning:  Undefined array key "action" in C:\xampp\htdocs\progdist\posible\models\put.model.php on line 23
+[19-May-2022 09:19:09 Europe/Berlin] PHP Warning:  Undefined variable $nameId in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 45
+[19-May-2022 09:19:09 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 45
+[19-May-2022 09:20:10 Europe/Berlin] PHP Warning:  Undefined variable $nameId in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 45
+[19-May-2022 09:20:10 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 45
+[19-May-2022 09:21:46 Europe/Berlin] PHP Warning:  Undefined variable $postColumns in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 48
+[19-May-2022 09:50:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php:18
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\routes\services\get.php(79): GetController::getData('users', '*', NULL, 'asc', NULL, NULL)
+#1 C:\xampp\htdocs\progdist\posible\routes\routes.php(38): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 18
+[23-May-2022 10:27:36 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[23-May-2022 10:27:46 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[23-May-2022 16:18:58 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[23-May-2022 16:19:00 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[23-May-2022 16:19:10 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[23-May-2022 16:20:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[23-May-2022 16:20:15 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[23-May-2022 16:20:26 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[23-May-2022 16:22:30 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[23-May-2022 16:27:51 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 06:36:32 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 153
+[24-May-2022 06:36:32 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\progdist\posible\models\get.model.php on line 154
+[24-May-2022 06:36:32 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 10:56:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 10:57:03 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 10:57:07 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 10:58:44 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 10:59:39 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 11:04:17 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 11:11:52 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 11:12:25 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 11:14:12 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 11:15:25 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 11:16:12 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 11:19:39 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 11:19:46 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 18:30:20 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 18:30:23 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 18:33:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 18:33:49 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 18:53:13 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 18:56:01 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:02:34 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:04:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:20:43 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:21:22 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:22:07 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:36:57 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:37:35 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:41:01 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:41:34 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:42:24 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:45:44 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:46:57 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 19:47:42 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:03:07 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:03:57 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:04:50 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:05:13 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:06:11 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:10:22 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:10:32 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:12:04 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:26:43 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:26:56 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:27:15 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:28:31 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:28:58 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:30:31 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:31:42 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:32:38 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:33:27 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[24-May-2022 20:42:30 Europe/Berlin] PHP Warning:  Undefined property: PDOException::$getCode in C:\xampp\htdocs\progdist\posible\models\post.model.php on line 42
+[24-May-2022 20:46:33 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php:145
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\controllers\post.controller.php(17): PostController::responser('{\n    "status":...')
+#1 C:\xampp\htdocs\progdist\posible\routes\services\post.php(128): PostController::postData('items', Array)
+#2 C:\xampp\htdocs\progdist\posible\routes\routes.php(41): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#5 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 145
+[24-May-2022 20:46:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php:145
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\controllers\post.controller.php(17): PostController::responser('{\n    "status":...')
+#1 C:\xampp\htdocs\progdist\posible\routes\services\post.php(128): PostController::postData('items', Array)
+#2 C:\xampp\htdocs\progdist\posible\routes\routes.php(41): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#5 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 145
+[24-May-2022 20:46:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php:145
+Stack trace:
+#0 C:\xampp\htdocs\progdist\posible\controllers\post.controller.php(17): PostController::responser('{\n    "status":...')
+#1 C:\xampp\htdocs\progdist\posible\routes\services\post.php(128): PostController::postData('items', Array)
+#2 C:\xampp\htdocs\progdist\posible\routes\routes.php(41): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\progdist\posible\controllers\route.controller.php(7): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\progdist\posible\index.php(26): RoutesController->index()
+#5 {main}
+  thrown in C:\xampp\htdocs\progdist\posible\controllers\post.controller.php on line 145

@@ -47,9 +47,14 @@
                     );
                 }
             } catch (PDOException $e) {
-                return array(
-                    "msg"=>$e
-                );
+
+                if($e->getCode()==23000){
+                    return Response::error409();
+                } else {
+                    return array(
+                        "msg"=>$e
+                    );
+                }
             }
            
 

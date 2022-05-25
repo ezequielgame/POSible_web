@@ -14,6 +14,12 @@
         static public function postData($table, $data){
 
             $response = PostModel::postData($table, $data);
+
+            if(is_string($response)){
+                echo $response;
+                return;
+            }
+
             self::responser($response);
         }
 
@@ -27,23 +33,32 @@
                 $validEmail = GetModel::getDataWhere($table, "*", "email_".$suffix, $data["email_".$suffix],null,null,null,null);
                 
                 if(empty($validEmail)){
+                    echo("hola");
                     $response = PostModel::postData($table, $data);
 
-                    if($suffix == "user"){
-                        $rolesNames = ["Dueño", "Administrador","Empleado"];
-                        $rolesDescriptions = [
-                            "Acceso a todo el sistema",
-                            "Modificar productos, categorias; hacer compras, ventas",
-                            "Hacer ventas, consultar productos y categorias"
-                        ];
-                        for($i = 0; $i < count($rolesNames); $i++){
-                            $rolesData = array();
-                            $rolesData["id_user_role"] = $response["lastId"];
-                            $rolesData["name_role"] = $rolesNames[$i];
-                            $rolesData["description_role"] = $rolesDescriptions[$i];
-                            PostModel::postData("roles",$rolesData);
-                        }
+                    if(is_string($response)){
+                        echo $response;
+                        return;
                     }
+
+                    // if($suffix == "user"){
+                    //     $rolesNames = ["Dueño", "Administrador","Empleado"];
+                    //     $rolesDescriptions = [
+                    //         "Acceso a todo el sistema",
+                    //         "Modificar productos, categorias; hacer compras, ventas",
+                    //         "Hacer ventas, consultar productos y categorias"
+                    //     ];
+                    //     for($i = 0; $i < count($rolesNames); $i++){
+                    //         $rolesData = array();
+                    //         $rolesData["id_user_role"] = $response["lastId"];
+                    //         $rolesData["name_role"] = $rolesNames[$i];
+                    //         $rolesData["description_role"] = $rolesDescriptions[$i];
+                    //         $roleResponse = PostModel::postData("roles",$rolesData);
+                    //         if($i == 0){ // Assign owner role
+                    //             PutModel::putData("users",["id_role_user"=>$roleResponse["lastId"]],$response["lastId"],"id_user");
+                    //         }
+                    //     }
+                    // }
                     
 
                     self::responser($response);
