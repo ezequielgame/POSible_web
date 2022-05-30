@@ -9,6 +9,12 @@
         static public function deleteData($table, $id, $nameId){
 
             $response = DeleteModel::deleteData($table, $id, $nameId);
+
+            if(is_string($response)){
+                echo $response;
+                return;
+            }
+
             self::responser($response);
         }
 

@@ -33,7 +33,6 @@
                 $validEmail = GetModel::getDataWhere($table, "*", "email_".$suffix, $data["email_".$suffix],null,null,null,null);
                 
                 if(empty($validEmail)){
-                    echo("hola");
                     $response = PostModel::postData($table, $data);
 
                     if(is_string($response)){

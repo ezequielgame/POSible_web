@@ -85,13 +85,14 @@
                 $postColumns .= $key.",";
             }
         }
+        
         $postColumns = substr($postColumns,0,-1);
 
         if(Connection::validColumns($table, $postColumns)){
 
-            
             //Registers
             if(isset($_GET["action"]) && $_GET["action"] == "register"){
+
                 $suffix = $_POST["suffix"] ?? "user";
 
                 $postArray = $_POST;
@@ -122,12 +123,17 @@
                     $suffix = $_GET["suffix"] ?? "user";
 
                     $validate = Connection::validToken($token, $domain, $suffix);
-
-                    if($validate){
+                    
+                    if(!$validate){
                         //Post
-                        $response->postData($table,$_POST);
+                        $validate = Connection::validToken($token, "employees", "employee");
+                        if(!$validate){
+                            echo Response::error401();
+                        }else {
+                            $response->postData($table,$_POST);
+                        }
                     }else {
-                        echo Response::error401();
+                        $response->postData($table,$_POST);
                     }
 
                 }else{

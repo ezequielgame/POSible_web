@@ -30,15 +30,20 @@ if(isset($_GET["id"]) && isset($_GET["nameId"])){
             $suffix = $_GET["suffix"] ?? "user";
 
             $validate = Connection::validToken($token, $domain, $suffix);
-
-            if($validate){
-
+            
+            if(!$validate){
+                $validate = Connection::validToken($token, "employees", "employee");
+                if(!$validate){
+                    echo Response::error401();
+                }else{
+                    //Controller response
+                    $response = new DeleteController();
+                    $response->deleteData($table, $_GET["id"],$_GET["nameId"]);
+                }
+            }else {
                 //Controller response
                 $response = new DeleteController();
                 $response->deleteData($table, $_GET["id"],$_GET["nameId"]);
-                
-            }else {
-                echo Response::error401();
             }
 
         }else{

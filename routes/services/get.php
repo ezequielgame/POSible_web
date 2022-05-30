@@ -18,8 +18,11 @@
         $validate = Connection::validToken($token, $domain, $suffix);
 
         if(!$validate){
-            echo Response::error401();
-            return;
+            $validate = Connection::validToken($token, "employees", "employee");
+            if(!$validate){
+                echo Response::error401();
+                return;
+            }
         }
     } else {
         echo Response::error401();

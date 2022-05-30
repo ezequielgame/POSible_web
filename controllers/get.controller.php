@@ -5,7 +5,7 @@
     // Requirements
     require_once("models/get.model.php");
     require_once("classes/response.class.php");
-
+    
 
     class GetController{
 
@@ -43,7 +43,7 @@
 
             $response = GetModel::getData($table,$select,$orderBy,$orderMode,$page,$pageSize);
 
-            $response = GetController::completeImagesPath($table,$response);
+            // //$response = GetController::completeImagesPath($table,$response);
 
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
@@ -55,7 +55,7 @@
 
             $response = GetModel::getRelationData($table, $select,$rel,$relType,$orderBy,$orderMode,$page,$pageSize);
 
-            $response = GetController::completeImagesPath($table,$response);
+            // //$response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
@@ -65,7 +65,7 @@
 
             $response = GetModel::getRelationDataWhere($table, $select,$linkTo,$equalTo,$rel,$relType,$orderBy,$orderMode,$page,$pageSize);
 
-            $response = GetController::completeImagesPath($table,$response);
+            // //$response = GetController::completeImagesPath($table,$response);
 
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
@@ -77,7 +77,7 @@
 
             $response = GetModel::getDataWhere($table,$select,$linkTo,$equalTo,$orderBy,$orderMode,$page,$pageSize);
 
-            $response = GetController::completeImagesPath($table,$response);
+            // //$response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
@@ -102,7 +102,7 @@
 
             $response = GetModel::getDataLike($table,$select,$linkTo,$search,$orderBy,$orderMode,$page,$pageSize);
 
-            $response = GetController::completeImagesPath($table,$response);
+            // //$response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
@@ -113,7 +113,7 @@
 
             $response = GetModel::getRelationDataLike($table, $select,$linkTo,$search,$rel,$relType,$orderBy,$orderMode,$page,$pageSize);
 
-            $response = GetController::completeImagesPath($table,$response);
+            //$response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
@@ -124,7 +124,7 @@
 
             $response = GetModel::getDataRange($table,$select,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn);
 
-            $response = GetController::completeImagesPath($table,$response);
+            //$response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
@@ -134,7 +134,7 @@
 
             $response = GetModel::getRelDataRange($table,$select,$rel,$relType,$linkTo,$between1,$between2,$orderBy,$orderMode,$page,$pageSize,$filterTo,$filterIn);
 
-            $response = GetController::completeImagesPath($table,$response);
+            //$response = GetController::completeImagesPath($table,$response);
             $controllerResponse = new GetController();
             $controllerResponse->responser($response);
 
