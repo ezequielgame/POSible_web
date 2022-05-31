@@ -3,6 +3,7 @@
     require_once("models/connection/connection.php");
     require_once("controllers/post.controller.php");
     require_once("controllers/put.controller.php");
+    require_once("controllers/get.controller.php");
 
     if(isset($_POST)){
 
@@ -26,7 +27,7 @@
             return;
         }
 
-        if(isset($_GET['action']) && !in_array($_GET['action'],["login","register"])){
+        if(isset($_GET['action']) && !in_array($_GET['action'],["login","register","weblogin"])){
 
             if(isset($_GET["nameId"]) && isset($_GET["id"])){
                 $nameId = $_GET["nameId"];

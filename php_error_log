@@ -1007,3 +1007,4 @@ Stack trace:
 [26-May-2022 07:57:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
 [26-May-2022 07:57:33 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
 [26-May-2022 07:57:59 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\progdist\posible\controllers\get.controller.php on line 16
+[30-May-2022 08:08:34 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\progdist\posible\routes\services\post.php on line 118

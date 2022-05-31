@@ -1,11 +1,15 @@
 .btn-color {
     background-color: #4e0110;
     color: #fff;
-
 }
 
 .bg-pos-primary{
     background-color: #4e0110;
+    color: #fff;
+}
+
+.pos-title{
+    color: #4e0110;
 }
 
 .profile-image-pic {
