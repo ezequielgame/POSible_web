@@ -16,7 +16,9 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
-    <title>Hola</title>
+    <script src="js/auth.js"></script>
+
+    <title>Inicio</title>
 </head>
 
 <body>
@@ -55,11 +57,12 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-store"></i>
+                <a class="nav-link collapsed" href="sucursales">
+                    <i class="fa-solid fa-shop"></i>
                     <span>Sucursales</span>
                 </a>
             </li>
+
 
 
             <!-- Divider -->
@@ -70,9 +73,10 @@
                 Empleados
             </div>
 
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="empleados">
                     <i class="fa-solid fa-people-group"></i>
                     <span>Empleados</span>
                 </a>
@@ -120,6 +124,9 @@
             </li>
 
 
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
             <!-- Heading -->
             <div class="sidebar-heading">
                 Inventario
@@ -127,7 +134,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="productos">
                     <i class="fa-solid fa-bottle-water"></i>
                     <span>Productos</span>
                 </a>
@@ -135,15 +142,16 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="categorias">
                     <i class="fa-solid fa-puzzle-piece"></i>
                     <span>Categorías</span>
                 </a>
             </li>
 
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="proveedores">
                     <i class="fa-solid fa-people-carry-box"></i>
                     <span>Proveedores</span>
                 </a>
@@ -190,7 +198,7 @@
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="login" onclick="sessionStorage.clear();">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Cerrar Sesión
                                 </a>

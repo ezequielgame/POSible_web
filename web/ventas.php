@@ -15,6 +15,8 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+
+    <!-- Date range picker -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
@@ -22,7 +24,9 @@
 
     <link href="css/styles.css" rel="stylesheet">
 
-    <title>Hola</title>
+    <script src="js/auth.js"></script>
+
+    <title>Ventas</title>
 </head>
 
 <body>
@@ -61,8 +65,8 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-store"></i>
+                <a class="nav-link collapsed" href="sucursales">
+                    <i class="fa-solid fa-shop"></i>
                     <span>Sucursales</span>
                 </a>
             </li>
@@ -76,9 +80,10 @@
                 Empleados
             </div>
 
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="empleados">
                     <i class="fa-solid fa-people-group"></i>
                     <span>Empleados</span>
                 </a>
@@ -126,6 +131,9 @@
             </li>
 
 
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
             <!-- Heading -->
             <div class="sidebar-heading">
                 Inventario
@@ -133,7 +141,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="productos">
                     <i class="fa-solid fa-bottle-water"></i>
                     <span>Productos</span>
                 </a>
@@ -141,7 +149,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="categorias">
                     <i class="fa-solid fa-puzzle-piece"></i>
                     <span>Categorías</span>
                 </a>
@@ -149,7 +157,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="proveedores">
                     <i class="fa-solid fa-people-carry-box"></i>
                     <span>Proveedores</span>
                 </a>
@@ -196,7 +204,7 @@
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="login" onclick="sessionStorage.clear();">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Cerrar Sesión
                                 </a>
@@ -213,18 +221,21 @@
 
                     <h1 id="titleHistory" class="pos-title">Historial de ventas</h1>
 
-                    <button type="button" class="btn btn-info m-3" name="btn-range" onclick="Clear('tableBody');">Seleccionar periodo</button>
+                    <button type="button" class="btn btn-info m-3" name="btn-range" id="btn-range" onclick="Clear('tableBody');">Seleccionar periodo</button>
 
                     <script>
-                        $('button[name="btn-range"]').daterangepicker({}, function(start, end, label) {
-
+                        $('button[name="btn-range"]').daterangepicker();
+                        $('button[name="btn-range"]').on('apply.daterangepicker', function(ev, picker) {
+                            if (sessionStorage.getItem("selectedBranchId") == null) {
+                                alert("Debes seleccionar una sucursal primero");
+                            }
                             var userId = JSON.parse(sessionStorage.getItem("user"))['id_user'];
                             var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
                             var url = 'http://192.168.100.2/sales?';
                             var aver = url + new URLSearchParams({
                                 linkTo: 'date_created_sale',
-                                between1: start.format('YYYY-MM-DD'),
-                                between2: end.format('YYYY-MM-DD'),
+                                between1: picker.startDate.format('YYYY-MM-DD'),
+                                between2: picker.endDate.format('YYYY-MM-DD'),
                                 filterIn: sessionStorage.getItem("selectedBranchId"),
                                 filerTo: 'id_branch_sale',
                                 select: 'id_sale,id_branch_sale,id_customer_sale,id_user_sale,id_employee_sale,total_sale,total_quantity_sale,id_payment_type_sale,name_user,name_employee,name_branch,name_payment_type,date_created_sale',
@@ -233,8 +244,8 @@
                             });
                             fetch(url + new URLSearchParams({
                                     linkTo: 'date_created_sale',
-                                    between1: start.format('YYYY-MM-DD'),
-                                    between2: end.format('YYYY-MM-DD'),
+                                    between1: picker.startDate.format('YYYY-MM-DD'),
+                                    between2: picker.endDate.format('YYYY-MM-DD'),
                                     filterIn: sessionStorage.getItem("selectedBranchId"),
                                     filterTo: 'id_branch_sale',
                                     select: 'id_sale,id_branch_sale,id_customer_sale,id_user_sale,id_employee_sale,total_sale,total_quantity_sale,id_payment_type_sale,name_user,name_employee,name_branch,name_payment_type,date_created_sale',
@@ -268,14 +279,14 @@
                                                             </tr>`
                                                 })
                                                 .join("")
-                                            document.getElementById("titleHistory").textContent = "Historial de ventas (del " + start.format('YYYY-MM-DD') + " al " + end.format('YYYY-MM-DD') + ")";
+                                            document.getElementById("titleHistory").textContent = "Historial de ventas (del " + picker.startDate.format('YYYY-MM-DD') + " al " + picker.endDate.format('YYYY-MM-DD') + ")";
                                             document.querySelector("#tableBody").insertAdjacentHTML("afterbegin", html);
                                         } else if (data.status == 404) {
                                             document.getElementById("titleHistory").textContent = "Historial de ventas (sin ventas en el periodo seleccionado)";
                                         }
                                     }
                                 })
-                            
+
                         });
                     </script>
 

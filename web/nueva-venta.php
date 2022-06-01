@@ -20,9 +20,11 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
+    <script src="js/auth.js"></script>
+
     <link href="css/styles.css" rel="stylesheet">
 
-    <title>Hola</title>
+    <title>Nueva venta</title>
 </head>
 
 <body>
@@ -61,11 +63,12 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-store"></i>
+                <a class="nav-link collapsed" href="sucursales">
+                    <i class="fa-solid fa-shop"></i>
                     <span>Sucursales</span>
                 </a>
             </li>
+
 
 
             <!-- Divider -->
@@ -76,10 +79,11 @@
                 Empleados
             </div>
 
+            
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fa-solid fa-people-group"></i>
+                <a class="nav-link collapsed" href="empleados">
+                <i class="fa-solid fa-people-group"></i>
                     <span>Empleados</span>
                 </a>
             </li>
@@ -125,6 +129,8 @@
                 </div>
             </li>
 
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
@@ -133,7 +139,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="productos">
                     <i class="fa-solid fa-bottle-water"></i>
                     <span>Productos</span>
                 </a>
@@ -141,15 +147,16 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fa-solid fa-puzzle-piece"></i>
+                <a class="nav-link collapsed" href="categorias">
+                <i class="fa-solid fa-puzzle-piece"></i>
                     <span>Categorías</span>
                 </a>
             </li>
 
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="proveedores">
                     <i class="fa-solid fa-people-carry-box"></i>
                     <span>Proveedores</span>
                 </a>
@@ -196,7 +203,7 @@
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <a class="dropdown-item" href="login" onclick="sessionStorage.clear();">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Cerrar Sesión
                                 </a>
@@ -276,12 +283,17 @@
                         }
 
                         function GetItem(code) {
+                            if(sessionStorage.getItem("selectedBranchId") == null){
+                                alert("Debes seleccionar una sucursal primero");
+                                return;
+                            }
+                            var branchId = sessionStorage.getItem("selectedBranchId");
                             var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
                             var url = 'http://192.168.100.2/items?';
                             // console.log(token);
                             fetch(url + new URLSearchParams({
-                                    linkTo: 'code_item',
-                                    equalTo: code,
+                                    linkTo: 'code_item,id_branch_item',
+                                    equalTo: code+','+branchId,
                                     rel: 'items,branches,categories,suppliers',
                                     relType: 'item,branch,category,supplier'
                                 }), {
@@ -337,7 +349,7 @@
                                                 document.querySelector("#tableItems").insertAdjacentHTML('afterbegin', html);
 
                                             } else {
-                                                alert("ya existe");
+                                                ChangeQuantity('up','quantityitem'+data.result[0].id_item);
                                             }
 
                                         }
@@ -392,6 +404,8 @@
                                     items['item' + id][1] += 1;
                                     var tot = items['item' + id][1] * items['item' + id][0]['sale_price_item'];
                                     document.getElementById('totalitem' + id).textContent = '$' + tot;
+                                } else{
+                                    alert("No hay stock suficiente");
                                 }
                             } else {
                                 if (current - 1 > 0) {
@@ -400,8 +414,10 @@
                                     var tot = items['item' + id][1] * items['item' + id][0]['sale_price_item'];
                                     document.getElementById('totalitem' + id).textContent = '$' + tot;
                                 } else {
-                                    document.getElementById('row' + id).remove();
-                                    delete items['item' + id];
+                                    if(confirm("Eliminar de la venta?")){
+                                        document.getElementById('row' + id).remove();
+                                        delete items['item' + id];
+                                    }
                                 }
                             }
                             var total = 0
@@ -414,6 +430,10 @@
 
                         function AddSale() {
                             var error = false;
+                            if(sessionStorage.getItem("selectedBranchId") == null){
+                                alert("Debes seleccionar una sucursal primero");
+                                return;
+                            }
                             if (customerId === -1) {
                                 alert("Debes elegir un cliente");
                                 error = true;
@@ -508,13 +528,43 @@
                                     })
                             }
                             if(end){
+                                UpdateStock();
+                            }
+                        }
+
+
+                        function UpdateStock(){
+                            var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
+                            var url = 'http://192.168.100.2/items?';
+                            var end = true;
+                            for (const [key, value] of Object.entries(items)) {
+                                fetch(url + new URLSearchParams({
+                                    id: value[0]['id_item'],
+                                    nameId: 'id_item'
+                                }), {
+                                    method: 'PUT',
+                                    headers: {
+                                        'authorization': token,
+                                        'Content-Type': 'application/x-www-form-urlencoded'
+                                    },
+                                    body: new URLSearchParams({
+                                        'stock_item': value[0]['stock_item'] - value[1]
+                                    })
+                                })
+                                .then((response) => response.json())
+                                .then(data => {
+                                    if(data.status !== 200){
+                                        end = false;
+                                    }
+                                })
+                            }
+                            if(end){
                                 alert('Se registró la venta');
                                 document.getElementById('totalCheckout').textContent = 0;
                                 items = {}
                                 Clear("tableItems");
                             }
                         }
-
 
 
                         setInterval(() => {

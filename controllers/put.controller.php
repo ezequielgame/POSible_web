@@ -8,8 +8,14 @@
 
         static public function putData($table, $data, $id, $nameId){
 
-            $response = PutModel::putData($table, $data, $id, $nameId);
+            if(isset($data["password_employee"]) && $data["password_employee"] != null){
+                $pass = $data["password_employee"];
+                $crypt = password_hash($pass, PASSWORD_DEFAULT);
+                $data["password_employee"] = $crypt;
+            }
             
+            $response = PutModel::putData($table, $data, $id, $nameId);
+
             if(is_string($response)){
                 echo $response;
                 return;

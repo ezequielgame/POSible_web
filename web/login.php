@@ -31,7 +31,7 @@
                             <input type="password" class="form-control" id="password" placeholder="Contraseña">
                         </div>
                         <div class="text-center"><button type="button" class="btn btn-color px-5 mb-5 w-100" name="login" onclick="Login()">Login</button></div>
-                        <div id="emailHelp" class="form-text text-center mb-5 text-dark">¿No tienes cuenta? <a href="#" class="text-dark fw-bold">Regístrate</a>
+                        
                         </div>
                     </div>
 

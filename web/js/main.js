@@ -1,5 +1,7 @@
 if (sessionStorage.getItem("user") == null) {
     location.href = "login";
+} else {
+
 }
 if (sessionStorage.getItem("selectedBranchId") == null) {
     document.getElementById("dropdownMenu2").innerText = 'Seleccionar Sucursal';
@@ -9,7 +11,7 @@ if (sessionStorage.getItem("selectedBranchId") == null) {
 
 window.onload = init();
 
-function init(){
+function init() {
     GetBranches();
 }
 
@@ -35,7 +37,7 @@ function GetBranches() {
                 if (data.status == 200) {
                     const html = data.result
                         .map(branch => {
-                            return `<button class="dropdown-item" id="branch${branch.id_branch}" type="button" onclick="SetSelectedBranch(this.id);">${branch.name_branch}</button>`
+                            return `<button name="branchoption" class="dropdown-item" id="branch${branch.id_branch}" type="button" onclick="Aver(this.id);">${branch.name_branch}</button>`
                         })
                         .join("")
                     document.querySelector("#dropdownBranches").insertAdjacentHTML('afterbegin', html);
@@ -44,7 +46,14 @@ function GetBranches() {
         })
 }
 
+function Aver(branchId) {
+    SetSelectedBranch(branchId);
+    alert("Cambiando de sucursal");
+    location.reload();
+}
+
 function SetSelectedBranch(branchId) {
+
     var id = branchId.replace("branch", "");
     var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
     var url = 'http://192.168.100.2/branches?';
@@ -67,11 +76,12 @@ function SetSelectedBranch(branchId) {
                     console.log(data.result);
                     document.getElementById("dropdownMenu2").innerText = data.result[0].name_branch;
                     sessionStorage.setItem("selectedBranchId", id);
+                    // location.reload();
                 }
             }
         })
 };
 
-function Clear(id){
-    document.getElementById(id).textContent='';
+function Clear(id) {
+    document.getElementById(id).textContent = '';
 }
