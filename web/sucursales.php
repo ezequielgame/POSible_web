@@ -162,6 +162,24 @@
                 </a>
             </li>
 
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Información
+            </div>
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Acerca de</span>
+                </a>
+            </li>
+
+
         </ul>
         <!-- End of Sidebar -->
 
@@ -220,7 +238,7 @@
 
                     <h1 class="pos-title">Sucursales</h1>
 
-                    <button type="button" class="btn btn-success m-3" id="" data-toggle="modal" data-target="#modalEmployeeForm" onclick="GetInfo('add');">Añadir Sucursal</button>
+                    <button type="button" class="btn btn-success m-3" id="" data-toggle="modal" data-target="#modalBranchesForm" onclick="GetInfo('add');">Añadir Sucursal</button>
 
                     <table class="table" id="branchesTable" width="100%" cellspacing="0">
                         <thead>
@@ -295,8 +313,8 @@
                                                                 <td>${branch.phone_number_branch}</td>
                                                                 <td>${branch.description_branch}</td>
                                                                 <td>
-                                                                    <button id="deletebranch${branch.id_branch}" class="btn btn-danger m-1" onclick="DeleteEmployee(${branch.id_branch});">Eliminar</button>
-                                                                    <button id="editbranch${branch.id_branch}" class="btn btn-warning m-1" data-toggle="modal" data-target="#modalEmployeeForm" onclick="GetInfo('edit',${branch.id_branch});">Editar</button>
+                                                                    <button id="deletebranch${branch.id_branch}" class="btn btn-danger m-1" onclick="DeleteBranchInfo(${branch.id_branch},${branch.id_location_branch});">Eliminar</button>
+                                                                    <button id="editbranch${branch.id_branch}" class="btn btn-warning m-1" data-toggle="modal" data-target="#modalBranchesForm" onclick="GetInfo('edit',${branch.id_branch});">Editar</button>
                                                                 </td>
                                                             </tr>`
                                                 })
@@ -313,7 +331,7 @@
 
 
                 <!-- Modal HTML Markup -->
-                <div id="modalEmployeeForm" class="modal fade">
+                <div id="modalBranchesForm" class="modal fade">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -418,13 +436,13 @@
                             document.getElementById("branch-phone").value = '';
                             document.getElementById("branch-description").value = '';
 
-                            if (!valid) {
-                                alert("La acción no puede continuar");
-                                location.reload();
-                                return;
-                            }
+                            // if (!valid) {
+                            //     alert("La acción no puede continuar");
+                            //     location.reload();
+                            //     return;
+                            // }
                         } else {
-
+                            var locationId = -1;
                             var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
                             var userId = JSON.parse(sessionStorage.getItem("user"))['id_user'];
                             var url = 'http://192.168.100.2/branches?';
@@ -452,6 +470,7 @@
                                             document.getElementById("branch-address").value = data.result[0].address_location;
                                             document.getElementById("branch-phone").value = data.result[0].phone_number_branch;
                                             document.getElementById("branch-description").value = data.result[0].description_branch;
+                                            locationId = data.result[0].id_location_branch;
                                         }
                                     }
                                 })
@@ -459,13 +478,13 @@
                         }
 
                         document.getElementById("btnModal").onclick = function() {
-                            ActionBranch(action, branchId);
+                            ActionBranch(action, branchId, locationId);
                         };
 
                     }
 
 
-                    function ActionBranch(action, branchId = 0) {
+                    function ActionBranch(action, branchId = 0, locationId = 0) {
                         const name = document.getElementById("branch-name").value;
                         const country = document.getElementById("branch-country").value;
                         const estate = document.getElementById("branch-state").value;
@@ -508,15 +527,50 @@
                         if (error) {
                             alert(errors);
                         } else if (action == 'add') {
-                            AddBranch(name, country, estate, city, address, phone, description);
+                            AddLocation(name, country, estate, city, address, phone, description);
                         } else {
-                            UpdateBranch(name, country, estate, city, address, phone, description, branchId);
+                            UpdateLocation(name, country, estate, city, address, phone, description, branchId, locationId);
                         }
                     }
 
-                    
 
-                    function UpdateBranch(name, country, estate, city, address, phone, description, branchId = 0) {
+
+                    function UpdateLocation(name, country, estate, city, address, phone, description, branchId = 0, locationId = 0) {
+
+                        var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
+                        // var branchId = sessionStorage.getItem("selectedBranchId");
+                        var userId = JSON.parse(sessionStorage.getItem("user"))['id_user'];
+                        var url = 'http://192.168.100.2/locations?';
+                        fetch(url + new URLSearchParams({
+                                id: locationId,
+                                nameId: 'id_location'
+                            }), {
+                                method: 'PUT',
+                                headers: {
+                                    'Content-Type': 'application/x-www-form-urlencoded',
+                                    'Accept': '*/*',
+                                    'authorization': token
+                                },
+                                body: new URLSearchParams({
+                                    address_location: address,
+                                    city_location: city,
+                                    estate_location: estate,
+                                    country_location: country
+                                })
+                            })
+                            .then((response) => response.json())
+                            .then(data => {
+                                if (typeof data.status !== 'undefined') {
+                                    if (data.status == 200) {
+                                        UpdateBranch(name, phone, description, branchId);
+                                    }
+                                }
+                            })
+
+                    }
+
+
+                    function UpdateBranch(name, phone, description, branchId = 0) {
 
                         var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
                         // var branchId = sessionStorage.getItem("selectedBranchId");
@@ -533,22 +587,17 @@
                                     'authorization': token
                                 },
                                 body: new URLSearchParams({
-                                    id_branch_branch: branch,
-                                    code_branch: code,
                                     name_branch: name,
-                                    email_branch: mail,
-                                    password_branch: pass,
                                     phone_number_branch: phone,
-                                    id_role_branch: role
+                                    description_branch: description
                                 })
                             })
                             .then((response) => response.json())
                             .then(data => {
                                 if (typeof data.status !== 'undefined') {
                                     if (data.status == 200) {
-                                        alert('Se modificó el empleado');
-                                        clearInterval(intervalId);
-                                        $('#modalEmployeeForm').modal('hide');
+                                        alert('Se modificó la sucursal');
+                                        $('#modalBranchesForm').modal('hide');
                                         GetBranchesList();
                                     }
                                 }
@@ -556,14 +605,41 @@
 
                     }
 
-                    function AddBranch(name, code, mail, pass, phone, branch, role) {
+                    function AddLocation(name, country, estate, city, address, phone, description) {
                         var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
-                        var branchId = sessionStorage.getItem("selectedBranchId");
+                        // var branchId = sessionStorage.getItem("selectedBranchId");
                         var userId = JSON.parse(sessionStorage.getItem("user"))['id_user'];
-                        var url = 'http://192.168.100.2/branchs?';
-                        fetch(url + new URLSearchParams({
-                                action: 'register'
-                            }), {
+                        var url = 'http://192.168.100.2/locations';
+                        fetch(url, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/x-www-form-urlencoded',
+                                    'Accept': '*/*',
+                                    'authorization': token
+                                },
+                                body: new URLSearchParams({
+                                    address_location: address,
+                                    city_location: city,
+                                    estate_location: estate,
+                                    country_location: country
+                                })
+                            })
+                            .then((response) => response.json())
+                            .then(data => {
+                                if (typeof data.status !== 'undefined') {
+                                    if (data.status == 200) {
+                                        AddBranch(name, phone, description, data.result.lastId);
+                                    }
+                                }
+                            })
+                    }
+
+                    function AddBranch(name, phone, description, locationId) {
+                        var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
+                        // var branchId = sessionStorage.getItem("selectedBranchId");
+                        var userId = JSON.parse(sessionStorage.getItem("user"))['id_user'];
+                        var url = 'http://192.168.100.2/branches';
+                        fetch(url, {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/x-www-form-urlencoded',
@@ -572,58 +648,85 @@
                                 },
                                 body: new URLSearchParams({
                                     id_user_branch: userId,
-                                    id_branch_branch: branch,
-                                    code_branch: code,
                                     name_branch: name,
-                                    email_branch: mail,
-                                    password_branch: pass,
+                                    id_location_branch: locationId,
                                     phone_number_branch: phone,
-                                    id_role_branch: role,
-                                    suffix: 'branch'
+                                    description_branch: description
                                 })
                             })
                             .then((response) => response.json())
                             .then(data => {
-                                alert(JSON.stringify(data));
                                 if (typeof data.status !== 'undefined') {
                                     if (data.status == 200) {
-                                        alert('Se añadió el empleado');
-                                        $('#modalEmployeeForm').modal('hide');
+                                        alert('Se añadió la sucursal');
+                                        $('#modalBranchesForm').modal('hide');
                                         // clearInterval(intervalId);
-                                        GetBranchesList();
+                                        location.reload();
                                     }
                                 }
                             })
                     }
 
-                    function DeleteEmployee(branchId) {
-                        if (confirm("¿Deseas eliminar este empleado?")) {
-                            var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
-                            var branchId = sessionStorage.getItem("selectedBranchId");
-                            var userId = JSON.parse(sessionStorage.getItem("user"))['id_user'];
-                            var url = 'http://192.168.100.2/branchs?';
-                            fetch(url + new URLSearchParams({
-                                    id: branchId,
-                                    nameId: 'id_branch'
-                                }), {
-                                    method: 'DELETE',
-                                    headers: {
-                                        'Content-Type': 'application/x-www-form-urlencoded',
-                                        'Accept': '*/*',
-                                        'authorization': token
-                                    }
-                                })
-                                .then((response) => response.json())
-                                .then(data => {
-                                    if (typeof data.status !== 'undefined') {
-                                        if (data.status == 200) {
-                                            alert('Se eliminó el empleado');
-                                            GetBranchesList();
-                                        }
-                                    }
-                                })
+                    function DeleteBranchInfo(branchId, locationId) {
+                        if (confirm("¿Deseas eliminar esta sucursal?")) {
+                            DeleteLocation(branchId, locationId);
                         }
+                    }
 
+                    function DeleteLocation(branchId, locationId) {
+                        var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
+                        // var branchId = sessionStorage.getItem("selectedBranchId");
+                        var userId = JSON.parse(sessionStorage.getItem("user"))['id_user'];
+                        var url = 'http://192.168.100.2/locations?';
+                        fetch(url + new URLSearchParams({
+                                id: locationId,
+                                nameId: 'id_location'
+                            }), {
+                                method: 'DELETE',
+                                headers: {
+                                    'Content-Type': 'application/x-www-form-urlencoded',
+                                    'Accept': '*/*',
+                                    'authorization': token
+                                }
+                            })
+                            .then((response) => response.json())
+                            .then(data => {
+                                if (typeof data.status !== 'undefined') {
+                                    if (data.status == 200) {
+                                        DeleteBranch(branchId);
+                                    }
+                                }
+                            })
+                    }
+
+                    function DeleteBranch(branchId) {
+                        var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
+                        // var branchId = sessionStorage.getItem("selectedBranchId");
+                        var userId = JSON.parse(sessionStorage.getItem("user"))['id_user'];
+                        var url = 'http://192.168.100.2/branches?';
+                        fetch(url + new URLSearchParams({
+                                id: branchId,
+                                nameId: 'id_branch'
+                            }), {
+                                method: 'DELETE',
+                                headers: {
+                                    'Content-Type': 'application/x-www-form-urlencoded',
+                                    'Accept': '*/*',
+                                    'authorization': token
+                                }
+                            })
+                            .then((response) => response.json())
+                            .then(data => {
+                                if (typeof data.status !== 'undefined') {
+                                    if (data.status == 200) {
+                                        alert('Se eliminó la sucursal');
+                                        if(branchId == sessionStorage.getItem("selectedBranchId")){
+                                            sessionStorage.removeItem("selectedBranchId");
+                                        }
+                                        location.reload();
+                                    }
+                                }
+                            })
                     }
                 </script>
 

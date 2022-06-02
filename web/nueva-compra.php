@@ -101,13 +101,13 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="compras" data-toggle="collapse" data-target="#collapseSales" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fa-solid fa-cash-register"></i>
-                    <span>Compras</span>
+                    <span>Ventas</span>
                 </a>
                 <div id="collapseSales" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Compras:</h6>
-                        <a class="collapse-item" href="nueva-compra">Nueva compra</a>
-                        <a class="collapse-item" href="compras">Historial</a>
+                        <h6 class="collapse-header">Ventas:</h6>
+                        <a class="collapse-item" href="nueva-venta">Nueva venta</a>
+                        <a class="collapse-item" href="ventas">Historial</a>
                     </div>
                 </div>
             </li>
@@ -160,6 +160,24 @@
                     <span>Proveedores</span>
                 </a>
             </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Información
+            </div>
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Acerca de</span>
+                </a>
+            </li>
+
 
         </ul>
         <!-- End of Sidebar -->
@@ -638,10 +656,10 @@
 
                                                 </div>
 
-                                                <div class="col-lg-4 col-xl-3">
+                                                <div class="col-xl-4">
 
                                                     <button type="button" class="btn btn-block btn-lg bg-pos-primary" onclick="AddPurchase();">
-                                                        <div class="d-flex justify-content-between">
+                                                        <div class="d-flex justify-content-around">
                                                             <span>Completar Compra </span>
                                                             <span>$</span>
                                                             <span id="totalCheckout">0.0</span>

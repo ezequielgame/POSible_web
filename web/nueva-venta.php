@@ -162,6 +162,24 @@
                 </a>
             </li>
 
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Información
+            </div>
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Acerca de</span>
+                </a>
+            </li>
+
+
         </ul>
         <!-- End of Sidebar -->
 
@@ -645,11 +663,11 @@
 
                                                 </div>
 
-                                                <div class="col-lg-4 col-xl-3">
+                                                <div class="col-xl-4">
 
                                                     <button type="button" class="btn btn-block btn-lg bg-pos-primary" onclick="AddSale();">
-                                                        <div class="d-flex justify-content-between">
-                                                            <span>Completar Venta </span>
+                                                        <div class="d-flex justify-content-around">
+                                                            <span>Completar Venta</span>
                                                             <span>$</span>
                                                             <span id="totalCheckout">0.0</span>
                                                         </div>

@@ -162,6 +162,24 @@
                 </a>
             </li>
 
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Información
+            </div>
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Acerca de</span>
+                </a>
+            </li>
+
+
         </ul>
         <!-- End of Sidebar -->
 
