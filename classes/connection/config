@@ -1,9 +1,0 @@
-{
-    "conexion":{
-        "server":"192.168.1.75",
-        "user":"chequegame",
-        "password":"pNao\\BiZMo.=^q",
-        "database":"posible",
-        "port":"3306"
-    }
-}

@@ -1,9 +1,0 @@
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*?)/?$ 404.php?path=$1 [L,QSA]
-AuthType basic
-AuthName RestrictedArea
-AuthUserFile "C:/xampp/htdocs/.htpasswd"
-require valid-user
-Options -Indexes
