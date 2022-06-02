@@ -349,6 +349,39 @@
                         </a>
 
 
+                        <a href="https://momentjs.com/" class="list-group-item list-group-item-action" target="blank" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Moment js
+                                </h5>
+                            </div>
+                            <p class="mb-1">A JavaScript date library for parsing, validating, manipulating, and formatting dates.</p>
+                            <small>
+                                Copyright (c) JS Foundation and other contributors
+
+                                Permission is hereby granted, free of charge, to any person
+                                obtaining a copy of this software and associated documentation
+                                files (the "Software"), to deal in the Software without
+                                restriction, including without limitation the rights to use,
+                                copy, modify, merge, publish, distribute, sublicense, and/or sell
+                                copies of the Software, and to permit persons to whom the
+                                Software is furnished to do so, subject to the following
+                                conditions:
+
+                                The above copyright notice and this permission notice shall be
+                                included in all copies or substantial portions of the Software.
+
+                                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+                                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+                                OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+                                NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+                                HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+                                WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+                                FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+                                OTHER DEALINGS IN THE SOFTWARE.
+                            </small>
+                        </a>
+
+
                         <a href="https://icons8.com/" class="list-group-item list-group-item-action" target="blank" aria-current="true">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">icons8
@@ -356,9 +389,11 @@
                             </div>
                             <p class="mb-1">Icons, illustrations, photos, music, and design tools</p>
                             <small>
-                                
+
                             </small>
                         </a>
+
+                        
 
 
 
