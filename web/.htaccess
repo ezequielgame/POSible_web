@@ -1,20 +1,12 @@
-# Header set Access-Control-Allow-Origin *
+Header set Access-Control-Allow-Origin *
 Options All -Indexes
 Options -MultiViews
 
 RewriteEngine On
 
-# RewriteCond ${REQUEST_FILENAME} !-f
-# RewriteRule ^ index.php [QSA,L]
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.*?)/?$ login.php [L,QSA]
-
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.*)$ $1.php
-
+RewriteRule ^(.*?)/?$ login.html [L,QSA]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
@@ -22,4 +14,4 @@ RewriteRule ^(.*)$ $1.html
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*?)/?$ login.php [L,QSA]
+RewriteRule ^(.*?)/?$ login.html [L,QSA]

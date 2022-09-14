@@ -3,12 +3,12 @@
     color: #fff;
 }
 
-.bg-pos-primary{
+.bg-pos-primary {
     background-color: #4e0110;
     color: #fff;
 }
 
-.pos-title{
+.pos-title {
     color: #4e0110;
 }
 
@@ -22,6 +22,20 @@
     background-color: #ebf2fa;
 }
 
+.text-dark {
+    color: #000;
+}
+
 a {
     text-decoration: none;
+}
+
+.swal-text {
+    background-color: #FEFAE3;
+    padding: 17px;
+    display: block;
+    margin: 22px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
 }

@@ -1,7 +1,9 @@
+const BASE_URL = 'http://localhost/api/'
+
 var token = 'Bearer ' + JSON.parse(sessionStorage.getItem("user"))['token_user'];
 // var branchId = sessionStorage.getItem("selectedBranchId");
 var userId = JSON.parse(sessionStorage.getItem("user"))['id_user'];
-var url = 'http://192.168.100.2/users?';
+var url = BASE_URL + 'users?';
 fetch(url + new URLSearchParams({
     action: 'authToken',
     suffix: 'user'
